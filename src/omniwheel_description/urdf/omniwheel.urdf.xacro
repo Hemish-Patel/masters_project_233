@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="omniwheel_robot">
+
+  <!-- Robot dimensions and mass properties (update when final CAD values are confirmed) -->
+  <xacro:property name="L" value="0.170" />          <!-- Wheel radial distance from centre (m) -->
+  <xacro:property name="r_w" value="0.050" />        <!-- Omni-wheel radius (m) -->
+  <xacro:property name="w" value="0.030" />          <!-- Omni-wheel width (m) -->
+  <xacro:property name="chassis_r" value="0.155" />  <!-- Chassis cylinder radius (m) -->
+  <xacro:property name="chassis_h" value="0.060" />  <!-- Chassis height (m) -->
+  <xacro:property name="chassis_m" value="4.0" />    <!-- Lumped chassis + gantry + payload mass (kg) - update from CAD -->
+  <xacro:property name="wheel_m" value="0.3" />      <!-- Single omni-wheel + rotor mass (kg) - update from CAD -->
+
+  <!-- Materials -->
+  <material name="chassis_grey">
+    <color rgba="0.6 0.6 0.6 1.0"/>
+  </material>
+  <material name="wheel_black">
+    <color rgba="0.1 0.1 0.1 1.0"/>
+  </material>
+  <material name="stripe_yellow">
+    <color rgba="1.0 0.85 0.0 1.0"/>
+  </material>
+
+  <!-- Base footprint and main chassis body -->
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 ${r_w}" rpy="0 0 0"/>
+  </joint>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${chassis_r}" length="${chassis_h}"/>
+      </geometry>
+      <material name="chassis_grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${chassis_r}" length="${chassis_h}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <!-- CoM offset: update xyz to (x_com, y_com, z_com) once final lumped CoM is known -->
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <mass value="${chassis_m}"/>
+      <!-- Cylinder inertia approximation: replace ixx..izz with CAD inertia tensor when finalised -->
+      <inertia ixx="${(1/12.0)*chassis_m*(3*chassis_r*chassis_r + chassis_h*chassis_h)}"
+               ixy="0" ixz="0"
+               iyy="${(1/12.0)*chassis_m*(3*chassis_r*chassis_r + chassis_h*chassis_h)}"
+               iyz="0"
+               izz="${0.5*chassis_m*chassis_r*chassis_r}"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="base_link">
+    <visual>
+      <material>
+        <ambient>0.6 0.6 0.6 1.0</ambient>
+        <diffuse>0.6 0.6 0.6 1.0</diffuse>
+        <specular>0.2 0.2 0.2 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+
+  <!-- Omni-wheel macro (1-directional friction and visual markers) -->
+  <xacro:macro name="omni_wheel" params="prefix theta">
+    <link name="${prefix}_link">
+      <visual name="${prefix}_cylinder_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="${r_w}" length="${w}"/>
+        </geometry>
+        <material name="wheel_black"/>
+      </visual>
+      <!-- Visual cross-stripes to see wheel rotation in Gazebo -->
+      <visual name="${prefix}_stripe_x">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${r_w*2.02} 0.008 ${w*1.05}"/>
+        </geometry>
+        <material name="stripe_yellow"/>
+      </visual>
+      <visual name="${prefix}_stripe_y">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.008 ${r_w*2.02} ${w*1.05}"/>
+        </geometry>
+        <material name="stripe_yellow"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="${r_w}" length="${w}"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="${wheel_m}"/>
+        <!-- Solid cylinder approximation for wheel inertia (update if needed) -->
+        <inertia ixx="${(1/12.0)*wheel_m*(3*r_w*r_w + w*w)}" ixy="0" ixz="0"
+                 iyy="${(1/12.0)*wheel_m*(3*r_w*r_w + w*w)}" iyz="0"
+                 izz="${0.5*wheel_m*r_w*r_w}"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${prefix}_link"/>
+      <!-- Pitch by +pi/2 so cylinder Z-axis points radially outward along theta -->
+      <origin xyz="${L*cos(theta)} ${L*sin(theta)} 0" rpy="0 ${pi/2} ${theta}"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+
+    <!-- Anisotropic friction: mu1=0 along wheel axle (0 0 1) for passive rollers, mu2=1 along drive direction -->
+    <gazebo reference="${prefix}_link">
+      <mu1>0.0</mu1>
+      <mu2>1.0</mu2>
+      <fdir1>0 0 1</fdir1>
+    </gazebo>
+
+    <!-- Joint velocity controller for this wheel (listens on /wheel_X/cmd_vel in rad/s) -->
+    <gazebo>
+      <plugin filename="ignition-gazebo-joint-controller-system"
+              name="ignition::gazebo::systems::JointController">
+        <joint_name>${prefix}_joint</joint_name>
+        <topic>/${prefix}/cmd_vel</topic>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- Instantiate the 3 omni-wheels (W1: 180 deg, W2: -60 deg, W3: +60 deg) -->
+  <xacro:omni_wheel prefix="wheel_1" theta="${pi}" />
+  <xacro:omni_wheel prefix="wheel_2" theta="${-pi/3.0}" />
+  <xacro:omni_wheel prefix="wheel_3" theta="${pi/3.0}" />
+
+</robot>
