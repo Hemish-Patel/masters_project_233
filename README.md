@@ -1,16 +1,17 @@
 # Masters Project Group 233 - Autonomous Omni-Wheel Robot
 
-A hardware-agnostic, containerised **ROS 2 Humble** and **Gazebo Fortress** development environment for **MECH 5080 Masters Project Group 233** (Autonomous 3-Wheel Omni-Directional Robot Simulation, Control & Navigation).
+Central repository for **MECH 5080M Masters Project Group 233** (University of Leeds): a semi-autonomous 3-wheel omni-directional inspection platform with a vertical Z-axis gantry, combining a containerised **ROS 2 Humble / Gazebo Fortress** simulation, **KiCad 10** electrical wiring schematics and hardware documentation, planned microcontroller firmware, and project submission documents.
 
 ---
 
 ## Table of Contents
 1. [Repository Structure](#1-repository-structure)
-2. [Environment & Docker Setup](#2-environment--docker-setup)
-3. [Docker & Workspace Architecture](#3-docker--workspace-architecture)
-4. [Simulation Architecture](#4-simulation-architecture)
-5. [Launching & Controlling the Simulation](#5-launching--controlling-the-simulation)
-6. [Development Process & Instructions](#6-development-process--instructions)
+2. [Electrical & Control Architecture](#2-electrical--control-architecture)
+3. [Environment & Docker Setup](#3-environment--docker-setup)
+4. [Docker & Workspace Architecture](#4-docker--workspace-architecture)
+5. [Simulation Architecture](#5-simulation-architecture)
+6. [Launching & Controlling the Simulation](#6-launching--controlling-the-simulation)
+7. [Development Process & Instructions](#7-development-process--instructions)
 
 ---
 
@@ -18,21 +19,43 @@ A hardware-agnostic, containerised **ROS 2 Humble** and **Gazebo Fortress** deve
 
 ```text
 masters_project_233/
-├── README.md                   # Project overview & setup guide
-├── simulation/                 # Dockerised ROS 2 Humble + Gazebo Fortress simulation
-│   ├── Dockerfile              # Container OS, ROS 2 Humble & Gazebo Fortress image definition
-│   ├── docker-compose.yml      # Base container configuration & persistent volumes
-│   ├── docker-compose.nvidia.yml # NVIDIA GPU hardware acceleration override
-│   ├── launch_masters.sh       # Hardware-detecting container launch script
-│   └── src/                    # ROS 2 workspace source packages
-├── firmware/                   # Low-level microcontroller firmware
-├── electrical_schematics/      # Electrical schematics & PCB/wiring diagrams
-└── submission_documents/       # Project reports, presentations & submission files
+├── README.md                                   # Project overview & setup guide
+├── electrical_schematics/                      # Hardware architecture, KiCad schematics & datasheets
+│   ├── Electrical_Wiring_Notes.md              # Full pinout tables, power budget & safety notes
+│   ├── RobotControlArchitecture_HighLevel_Draft.png # High-level system & control block diagram
+│   ├── ElectricalWiringSchematic/              # KiCad 10 project, schematic, portable symbols & PDF
+│   └── DataSheets/                             # Verified manufacturer PDFs for all selected parts
+├── simulation/                                 # Dockerised ROS 2 Humble + Gazebo Fortress simulation
+│   ├── Dockerfile                              # Container OS, ROS 2 Humble & Gazebo Fortress image definition
+│   ├── docker-compose.yml                      # Base container configuration & persistent volumes
+│   ├── docker-compose.nvidia.yml               # NVIDIA GPU hardware acceleration override
+│   ├── launch_masters.sh                       # Hardware-detecting container launch script
+│   └── src/                                    # ROS 2 workspace source packages
+├── submission_main_documents/                  # Project reports, CPP & submission documents
+└── firmware/                                   # (Planned) Low-level microcontroller firmware
 ```
 
 ---
 
-## 2. Environment & Docker Setup
+## 2. Electrical & Control Architecture
+
+The hardware control system splits power, hard-real-time motor control, and high-level autonomy across three tiers:
+
+* **Power Distribution (Tethered & Galvanically Isolated):** An offboard `24 V / 10 A` (`240 W` target, `PS1` TBD) supply feeds the stepper drivers (`24V_GND`) and steps down through a **Mean Well `SKMW40F-05`** (`U1`, `5 V / 8 A`, `40 W`, `2 kVDC` galvanic isolation) to an isolated `5V_GND` logic rail *(requires an inline `4 A` slow-blow fuse and series Schottky reverse-polarity diode on `+Vin`)*.
+* **Low-Level Real-Time RC Core (Selected & Wired):** An **ST `NUCLEO-L432KC`** (`U11`) drives **4× NEMA 17 (`17HE19-2004S`)** steppers (`M1–M3` omni-wheels + `M4` Z-axis gantry) through a **Toshiba `TBD62083APG`** (`U19`) and **4× `DM320T`** opto-isolated drivers (`U2–U5`), reading **3× `AS5600`** magnetic wheel encoders (`3.3 V` analog), an **`ISM330DHCX`** 6-axis IMU (`I2C1`), and an **`HC-05`** Bluetooth serial link (`USART1`).
+* **High-Level Autonomy & Sensing (Placeholders / Deferred):** Placeholders are laid out on the A2 schematic for the `U12` Main Computer (target **Raspberry Pi 5** over `USB_VCP`), SLAM ToF and ultrasonic sensors (`U13–U16`), a 5 GHz Wi-Fi uplink (`U17`), and the Objective 4 gantry sensor suite black box (`U18`).
+
+### Key Hardware & Documentation Links
+* **Full Wiring Reference & Pinouts:** [Electrical_Wiring_Notes.md](electrical_schematics/Electrical_Wiring_Notes.md) — complete `NUCLEO-L432KC` / `TBD62083APG` pin mapping, power budget, solder-bridge notes (`SB9`, `SB16`, `SB18`), and safety warnings.
+* **Schematic Printout (PDF):** [ElectricalWiringSchematic.pdf](electrical_schematics/ElectricalWiringSchematic/ElectricalWiringSchematic.pdf) — viewable directly in GitHub/browser.
+* **KiCad 10 Project:** [ElectricalWiringSchematic.kicad_pro](electrical_schematics/ElectricalWiringSchematic/ElectricalWiringSchematic.kicad_pro) — uses `${KIPRJMOD}` in `sym-lib-table` so the custom `MECH5080_Parts.kicad_sym` library loads automatically on any machine.
+* **System Block Draft:** [RobotControlArchitecture_HighLevel_Draft.png](electrical_schematics/RobotControlArchitecture_HighLevel_Draft.png)
+* **Component Datasheets:** [DataSheets/](electrical_schematics/DataSheets/) — 9 verified manufacturer PDFs matching all selected hardware.
+* **Contract Performance Plan:** [ContractPerformancePlan(CPP).pdf](submission_main_documents/ContractPerformancePlan%28CPP%29.pdf)
+
+---
+
+## 3. Environment & Docker Setup
 
 ### Prerequisites & Hardware Support
 Before starting, ensure you have the following installed on your Linux host machine:
@@ -82,7 +105,7 @@ source install/setup.bash
 
 ---
 
-## 3. Docker & Workspace Architecture
+## 4. Docker & Workspace Architecture
 
 The simulation environment lives inside `simulation/`, separating the **Docker infrastructure** from the **ROS 2 source packages** (`simulation/src/`), and linking them together via bind mounts and persistent volumes:
 
@@ -99,7 +122,7 @@ The simulation environment lives inside `simulation/`, separating the **Docker i
 
 ---
 
-## 4. Simulation Architecture
+## 5. Simulation Architecture
 
 ### Simulation Package Structure
 
@@ -125,7 +148,7 @@ In C++, `.cpp` source files cannot be executed directly; they must be compiled i
    - `include/`: Holds optional `.hpp` C++ header files.
 
 ### Control & Hardware Isolation Pipeline
-To match the physical robot architecture (where the Raspberry Pi 4 sends body velocity commands $(v_x, v_y, \omega_z)$ to a low-level microcontroller that calculates individual wheel speeds and drives the 3 motors), the simulation keeps wheel actuation isolated behind the same interface:
+To match the physical robot architecture (where the Raspberry Pi 5 sends body velocity commands $(v_x, v_y, \omega_z)$ to a low-level microcontroller that calculates individual wheel speeds and drives the 3 motors), the simulation keeps wheel actuation isolated behind the same interface:
 
 1. **High-Level Control / Teleop (`omniwheel_manualcontrol_node` or Nav2):** Publishes desired body twist $(v_x, v_y, \omega_z)$ on `/cmd_vel` (`geometry_msgs/msg/Twist`).
 2. **Low-Level Kinematic Controller (`omniwheel_kinematics_node`):** Subscribes to `/cmd_vel`, applies the inverse kinematics Jacobian $J$:
@@ -137,7 +160,7 @@ Each omni-wheel in `omniwheel.urdf.xacro` uses **anisotropic (1-directional) sur
 
 ---
 
-## 5. Launching & Controlling the Simulation
+## 6. Launching & Controlling the Simulation
 
 ### Step 1: Launch Gazebo & Spawn the Omni-Wheel Robot
 Start the container (`./simulation/launch_masters.sh`) and run:
@@ -188,7 +211,7 @@ Use **WASD** for planar movement ($X/Y$) and **Q / E** for rotation.
 
 ---
 
-## 6. Development Process & Instructions
+## 7. Development Process & Instructions
 
 ### Rebuilding After Editing Code in `simulation/src/`
 Whenever you modify C++ source files, launch files, URDF/Xacro models, or `CMakeLists.txt` inside `simulation/src/`, re-run inside the container:
