@@ -1,0 +1,7574 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b0f0d541-6278-4ef4-a702-4184565df2b7")
+	(paper "A2")
+	(lib_symbols
+		(symbol "MECH5080_Parts:AS5600_Encoder"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AS5600_Encoder"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Selected: AS5600 Magnetic Rotary Encoder Module"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AS5600_Encoder_0_1"
+				(rectangle
+					(start -10.16 10.16)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC"
+					(at 0 8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "AS5600_Encoder_1_1"
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 5.08 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:DM320T_Driver"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -15.24 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "DM320T_Driver"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Selected: StepperOnline DM320T Digital Stepper Driver"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DM320T_Driver_0_1"
+				(rectangle
+					(start -15.24 10.16)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "+Vdc_24V"
+					(at -5.08 8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "OPTO_5V"
+					(at 7.62 8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "DM320T_Driver_1_1"
+				(pin power_in line
+					(at -5.08 15.24 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 15.24 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "A+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "A-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "B+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "B-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "PUL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "ENA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:HC05_Bluetooth_Module"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "HC05_Bluetooth_Module"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "HC-05 Serial Bluetooth Breakout Module (ZS-040 6-Pin, 5V Power, 3.3V UART Logic)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "HC05_Bluetooth_Module_0_1"
+				(rectangle
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_5V"
+					(at 0 8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "HC05_Bluetooth_Module_1_1"
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "STATE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "EN_KEY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:ISM330DHCX_IMU_Module"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ISM330DHCX_IMU_Module"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "ST ISM330DHCX 6-Axis Industrial IMU Breakout Module (3.3V I2C Mode 1)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ISM330DHCX_IMU_Module_0_1"
+				(rectangle
+					(start -12.7 12.7)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_3V3"
+					(at 0 10.795 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -10.795 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "ISM330DHCX_IMU_Module_1_1"
+				(pin power_in line
+					(at 0 17.78 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "INT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "INT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "SDO_SA0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:MeanWell_SKMW40F_05"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -15.24 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MeanWell_SKMW40F_05"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mean Well SKMW40F-05 Isolated DC-DC Converter (9-36V In -> 5V/8A 40W Out, 1x1 in, 2kVDC Isolation)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MeanWell_SKMW40F_05_0_1"
+				(rectangle
+					(start -15.24 7.62)
+					(end 15.24 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "+Vin_24V"
+					(at -5.08 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "-Vin_24V"
+					(at -5.08 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "+Vout_5V"
+					(at 7.62 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "-Vout_5V"
+					(at 7.62 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "MeanWell_SKMW40F_05_1_1"
+				(pin power_in line
+					(at -5.08 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "R.C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "Trim"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:NEMA17_17HE19_2004S"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "M"
+				(at -10.16 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NEMA17_17HE19_2004S"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Selected: NEMA 17 Bipolar Stepper Motor 17HE19-2004S"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NEMA17_17HE19_2004S_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "NEMA17_17HE19_2004S_1_1"
+				(pin passive line
+					(at 15.24 5.08 180)
+					(length 5.08)
+					(name "A+_BLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "A-_BLU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "B+_GRN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "B-_RED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:NUCLEO_L432KC"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -17.78 35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NUCLEO_L432KC"
+				(at 0 -35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "ST NUCLEO-L432KC (MB1180) STM32L432KCU6 Nucleo-32 Dev Board (CN3/CN4 Arduino Nano Pinout)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NUCLEO_L432KC_0_1"
+				(rectangle
+					(start -17.78 27.94)
+					(end 17.78 -27.94)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "+5V"
+					(at -5.08 26.035 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -26.035 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "+3V3"
+					(at 7.62 26.035 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "NUCLEO_L432KC_1_1"
+				(pin bidirectional line
+					(at 22.86 22.86 180)
+					(length 5.08)
+					(name "USB_VCP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN1"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -12.7 0)
+					(length 5.08)
+					(name "D1/PA9_BT_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-1"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -15.24 0)
+					(length 5.08)
+					(name "D0/PA10_BT_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-2"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 12.7 180)
+					(length 5.08)
+					(name "NRST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-3"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -33.02 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-4"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 22.86 0)
+					(length 5.08)
+					(name "D2/PA12_M1_PUL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-5"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 20.32 0)
+					(length 5.08)
+					(name "D3/PB0_M1_DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-6"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 5.08)
+					(name "D4/PB7_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-7"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -10.16 0)
+					(length 5.08)
+					(name "D5/PB6_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-8"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 17.78 0)
+					(length 5.08)
+					(name "D6/PB1_M2_PUL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-9"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 15.24 0)
+					(length 5.08)
+					(name "D9/PA8_M2_DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-12"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 12.7 0)
+					(length 5.08)
+					(name "D10/PA11_M3_PUL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-13"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 10.16 0)
+					(length 5.08)
+					(name "D11/PB5_M3_DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-14"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "D12/PB4_Z_PUL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN3-15"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 15.24 180)
+					(length 5.08)
+					(name "VIN_7-12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-1"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 33.02 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-4"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -17.78 0)
+					(length 5.08)
+					(name "A6/PA7_LIM_HI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-6"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 5.08 0)
+					(length 5.08)
+					(name "A3/PA4_Z_DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-9"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -5.08 0)
+					(length 5.08)
+					(name "A2/PA3_ENC3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-10"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "A1/PA1_ENC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-11"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "A0/PA0_ENC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-12"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 10.16 180)
+					(length 5.08)
+					(name "AREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-13"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 33.02 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-14"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -20.32 0)
+					(length 5.08)
+					(name "D13/PB3_LIM_LO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CN4-15"
+						(effects
+							(font
+								(size 0.85 0.85)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:TBD62083APG"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -15.24 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TBD62083APG"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Toshiba TBD62083APG 8-Ch DMOS Low-Side Sink Driver (PDIP-18, 3.3V Input, 50V/500mA Out)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TBD62083APG_0_1"
+				(rectangle
+					(start -15.24 17.78)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "COM_5V"
+					(at -5.08 15.875 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "TBD62083APG_1_1"
+				(pin input line
+					(at 20.32 12.7 180)
+					(length 5.08)
+					(name "I1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "I2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 7.62 180)
+					(length 5.08)
+					(name "I3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "I4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "I5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "I6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "I7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "I8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 22.86 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "O8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "O7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "O6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "O5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "O4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 7.62 0)
+					(length 5.08)
+					(name "O3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_5GHz_WiFi_Uplink"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_5GHz_WiFi_Uplink"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified 5GHz Wi-Fi Uplink Module"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_5GHz_WiFi_Uplink_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_5V"
+					(at 0 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_5GHz_WiFi_Uplink_1_1"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "DATA+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "DATA-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "RF_ANT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_Main_Computer"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -17.78 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_Main_Computer"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified Main Onboard Computer (e.g. Raspberry Pi 5)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_Main_Computer_0_1"
+				(rectangle
+					(start -17.78 20.32)
+					(end 17.78 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_5V"
+					(at 0 18.415 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -18.415 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_Main_Computer_1_1"
+				(pin power_in line
+					(at 0 25.4 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -25.4 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 15.24 0)
+					(length 5.08)
+					(name "MCU_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 12.7 0)
+					(length 5.08)
+					(name "MCU_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 15.24 180)
+					(length 5.08)
+					(name "TOF_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 12.7 180)
+					(length 5.08)
+					(name "TOF_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 10.16 180)
+					(length 5.08)
+					(name "US1_TRIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 7.62 180)
+					(length 5.08)
+					(name "US1_ECHO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 5.08 180)
+					(length 5.08)
+					(name "US2_TRIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 2.54 180)
+					(length 5.08)
+					(name "US2_ECHO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "WIFI_DATA+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "WIFI_DATA-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "SENSOR_MCU_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "SENSOR_MCU_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "SCAN_TRIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_Sensor_Suite_MCU"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_Sensor_Suite_MCU"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified Arm / Gantry Sensor Suite Controller Black Box (Objective 4)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_Sensor_Suite_MCU_0_1"
+				(rectangle
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_5V"
+					(at 0 8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -8.255 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_Sensor_Suite_MCU_1_1"
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "SCAN_TRIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_Tethered_24V_PSU"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PS"
+				(at -10.16 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_Tethered_24V_PSU"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified Tethered 24V DC Main Power Supply"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_Tethered_24V_PSU_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "+24V_OUT"
+					(at 0 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_Tethered_24V_PSU_1_1"
+				(pin power_out line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_ToF_Sensor"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_ToF_Sensor"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified Time-of-Flight (ToF) Sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_ToF_Sensor_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC"
+					(at 0 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_ToF_Sensor_1_1"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MECH5080_Parts:Unspecified_Ultrasonic_Sensor"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -10.16 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Unspecified_Ultrasonic_Sensor"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unspecified Ultrasonic Distance Sensor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Unspecified_Ultrasonic_Sensor_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "VCC_5V"
+					(at 0 5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -5.715 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Unspecified_Ultrasonic_Sensor_1_1"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "TRIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "ECHO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 18 60)
+		(end 286 263)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7c089b5f-9e92-4343-945f-a287847c0b4f")
+	)
+	(rectangle
+		(start 14 10.5)
+		(end 576 364)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "adc83a2f-87b2-4b87-adfc-0ed3d0e2ddcd")
+	)
+	(rectangle
+		(start 18 12)
+		(end 150 58)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c7963fc4-0210-485e-9132-f510fabc35ad")
+	)
+	(rectangle
+		(start 294 60)
+		(end 570 358)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f843bda5-b3bc-4088-b466-ecbb3dd4efaf")
+	)
+	(text "Robot Body"
+		(exclude_from_sim no)
+		(at 154 14.5 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "14512846-b765-4def-a9f1-d9a70b0f8d18")
+	)
+	(text "Power Distribution (Tethered)"
+		(exclude_from_sim no)
+		(at 22 15.5 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "52b35669-7e7c-4c74-a96c-1a2091b52f5c")
+	)
+	(text "The output gets inverted\n3.3V in -> 0V Out\n0V   in -> 5V Out\n\nThough this is what we want\nas motor driver expects it this way\n"
+		(exclude_from_sim no)
+		(at 165.354 77.978 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c924d89-9e66-4917-894e-5b5b472a9395")
+	)
+	(text "Galvanically Isolated Power \n"
+		(exclude_from_sim no)
+		(at 116.84 55.626 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ef0521d-0736-457d-a7f2-44c395c1d9f3")
+	)
+	(text "I2C is not used \nas encoders all have same address\nand no way to change it\n\nJust read analogue in \nfor each one instead"
+		(exclude_from_sim no)
+		(at 157.48 186.182 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8c1b3974-c396-4311-9ef4-905c90a00478")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 166.37 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c695fda-c791-4bf7-8b2c-e1aa717f81ab")
+	)
+	(text "Standalone Manually Controlled Robot"
+		(exclude_from_sim no)
+		(at 21.082 65.532 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c6ebd250-8c7d-4056-9f1a-118b0056df3a")
+	)
+	(text "SKMW40F-05 Protection & Thermal Warning:\n- REQUIRED on +24V input: 4A slow-blow fuse (8A max per DS) + series Schottky diode (e.g. SB560)\n  (No built-in fuse or reverse-polarity protection!)\n- Natural convection derates above 30C: add 25x25mm heatsink / airflow if >20-25W continuous"
+		(exclude_from_sim no)
+		(at 168 26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d60556fa-aaed-4ed2-b7d0-1a5656f452a8")
+	)
+	(text "Main Computer & High-Level Autonomy (Placeholders)"
+		(exclude_from_sim no)
+		(at 298 65.5 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "e034cd3b-00e8-40f5-96a2-ee566e65576c")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 259.08 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fbbc5bfb-5931-4910-8a33-7a27b42f4fb4")
+	)
+	(junction
+		(at 212.09 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01be20fb-a177-400c-87ba-6675c5c72a4f")
+	)
+	(junction
+		(at 212.09 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "050a809d-db06-4ec8-9de0-3e751679699e")
+	)
+	(junction
+		(at 209.55 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bd61380-ee5b-4380-bf0c-625e40f528a1")
+	)
+	(junction
+		(at 212.09 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16366edc-eecd-4189-8439-6f0d638d674a")
+	)
+	(junction
+		(at 69.85 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a040245-057b-4606-9c7a-c33c9203fc43")
+	)
+	(junction
+		(at 73.66 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d16d7e0-6fa4-416a-8738-114d6cc09025")
+	)
+	(junction
+		(at 212.09 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f20e0d4-e724-4412-aa96-e0588db369b6")
+	)
+	(junction
+		(at 83.82 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2592b879-791a-4b5c-bf30-c9e42b015ab4")
+	)
+	(junction
+		(at 212.09 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33ecad1b-cd80-4584-9094-7efc744a275c")
+	)
+	(junction
+		(at 123.19 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39c2bf0e-ff07-4f51-8878-82eb90352a5a")
+	)
+	(junction
+		(at 209.55 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4239fdd7-06cd-4460-8e20-29ca04f963c3")
+	)
+	(junction
+		(at 73.66 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4612a781-843c-4b99-a7db-bb878f2386a1")
+	)
+	(junction
+		(at 212.09 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f77c06d-10de-4c49-9ed2-56700c37a627")
+	)
+	(junction
+		(at 212.09 200.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d34851b-9d8a-44a8-b625-df65b4ad3dca")
+	)
+	(junction
+		(at 212.09 238.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ddef963-9712-410b-96fe-ad70d1b88a07")
+	)
+	(junction
+		(at 212.09 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f1aa9d8-1f35-4a74-9c8a-0fe84132e39f")
+	)
+	(junction
+		(at 209.55 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a131c81-2067-4288-af03-1ec66ea0310a")
+	)
+	(junction
+		(at 251.46 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cc76cec-3cd7-42b8-8a59-641d297c6c32")
+	)
+	(junction
+		(at 123.19 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89ea18ba-a495-48dd-a85f-25bb3d722790")
+	)
+	(junction
+		(at 123.19 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97f441f9-99c8-4f4a-8ed2-d30fc5c84a80")
+	)
+	(junction
+		(at 69.85 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4995c39-8f7e-42ff-8f22-c70b11bc4096")
+	)
+	(junction
+		(at 83.82 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a90a3363-bab8-4586-a9c0-89b97c8de1e7")
+	)
+	(junction
+		(at 81.28 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acc46806-7f8c-4ae0-b125-12ce71c22c72")
+	)
+	(junction
+		(at 162.56 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f58c12bb-ecff-4c5e-b380-40d4957c02d3")
+	)
+	(junction
+		(at 69.85 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f81b4ba9-8786-48da-b76b-584b7eb71521")
+	)
+	(no_connect
+		(at 279.4 97.79)
+		(uuid "13d4e851-3702-41db-ac85-401545aebbb5")
+	)
+	(no_connect
+		(at 115.57 121.92)
+		(uuid "1c00a391-6329-4271-8554-4f7c8f150b7e")
+	)
+	(no_connect
+		(at 199.39 146.05)
+		(uuid "2811bf89-daa3-45a8-a49c-d85a5906ae51")
+	)
+	(no_connect
+		(at 241.3 198.12)
+		(uuid "336a350c-ca48-4f07-b5c5-3ea0a9ce81b1")
+	)
+	(no_connect
+		(at 200.66 223.52)
+		(uuid "3c1b5278-b2ca-4596-baf4-806f3ecd390b")
+	)
+	(no_connect
+		(at 241.3 241.3)
+		(uuid "6520c0e3-0f83-4a0f-b3d2-58ed0def5a2f")
+	)
+	(no_connect
+		(at 88.9 35.56)
+		(uuid "71a961d7-50b0-42cc-92e8-84743dc7d94e")
+	)
+	(no_connect
+		(at 199.39 148.59)
+		(uuid "7db13d80-f0b9-4233-a75e-31c960513e2c")
+	)
+	(no_connect
+		(at 200.66 187.96)
+		(uuid "8ab6e705-0242-48cb-a428-c09cdcd4ee0e")
+	)
+	(no_connect
+		(at 279.4 102.87)
+		(uuid "97759e01-b693-47cb-af09-04a0824b5fe0")
+	)
+	(no_connect
+		(at 241.3 193.04)
+		(uuid "9bbe9fd9-3351-4248-9923-7fbc00c125fe")
+	)
+	(no_connect
+		(at 241.3 243.84)
+		(uuid "b7c7413c-6b49-42d0-a45e-facd4fe09c38")
+	)
+	(no_connect
+		(at 115.57 196.85)
+		(uuid "bdbc41f7-13b0-49b3-b766-22bad1aa5640")
+	)
+	(no_connect
+		(at 241.3 195.58)
+		(uuid "c24a9c3e-51c2-4e92-bdd8-a6560d9818c9")
+	)
+	(no_connect
+		(at 115.57 236.22)
+		(uuid "c8545e71-4a65-4491-b957-8b66dc6dbe6f")
+	)
+	(no_connect
+		(at 279.4 100.33)
+		(uuid "ddbbdb78-c212-4b39-a7b9-f8d661bb9323")
+	)
+	(no_connect
+		(at 200.66 185.42)
+		(uuid "e00f1ea1-26ef-46cc-b45b-c2231ba93a39")
+	)
+	(no_connect
+		(at 241.3 190.5)
+		(uuid "e85d9e90-b868-47fd-bf1c-aa2e8bdb1a15")
+	)
+	(no_connect
+		(at 115.57 158.75)
+		(uuid "f3abf386-c493-4351-8904-6dcdfc933487")
+	)
+	(no_connect
+		(at 129.54 35.56)
+		(uuid "fabb3178-d412-42ee-9d3a-7b7769bdf5e3")
+	)
+	(no_connect
+		(at 200.66 226.06)
+		(uuid "fdf1a707-5cb1-446e-bd3c-e2cbf2702a97")
+	)
+	(wire
+		(pts
+			(xy 130.81 191.77) (xy 130.81 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02426df1-0b71-47b0-b196-171284a602bb")
+	)
+	(wire
+		(pts
+			(xy 69.85 137.16) (xy 95.25 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f420f6-61fa-4b05-96f0-c81c959f7404")
+	)
+	(wire
+		(pts
+			(xy 187.96 97.79) (xy 233.68 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c688da-be30-4dbf-ad71-d19c6f109a5f")
+	)
+	(wire
+		(pts
+			(xy 232.41 185.42) (xy 241.3 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05d7d6b6-9602-4876-8421-904c24f038ea")
+	)
+	(wire
+		(pts
+			(xy 134.62 107.95) (xy 134.62 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05db4e59-5125-40d3-9a64-0b5766c74b0c")
+	)
+	(wire
+		(pts
+			(xy 45.72 119.38) (xy 74.93 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06e7762d-4ec7-4952-9819-d7b8eca834cb")
+	)
+	(wire
+		(pts
+			(xy 187.96 92.71) (xy 233.68 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b4f2f19-aca2-41b3-8969-1db35e00a906")
+	)
+	(wire
+		(pts
+			(xy 200.66 182.88) (xy 212.09 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cdb7d9c-50e5-4b8f-bd49-ea91b4d42da6")
+	)
+	(wire
+		(pts
+			(xy 264.16 80.01) (xy 264.16 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d965069-548e-4b28-9aff-c8ced6154a46")
+	)
+	(wire
+		(pts
+			(xy 212.09 220.98) (xy 212.09 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fdbff66-337f-475e-92c5-150582d229eb")
+	)
+	(wire
+		(pts
+			(xy 256.54 158.75) (xy 212.09 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10603730-183a-4cc4-91a0-9aed9c3fe8cc")
+	)
+	(wire
+		(pts
+			(xy 73.66 220.98) (xy 90.17 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fbb5ee-c035-424d-8ac2-a0be6368bc97")
+	)
+	(wire
+		(pts
+			(xy 184.15 130.81) (xy 209.55 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ae7f4be-4fc2-4696-9718-c30501cfb8ad")
+	)
+	(wire
+		(pts
+			(xy 81.28 48.26) (xy 104.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc8b080-0cc4-46fa-a75d-6f4a117f1770")
+	)
+	(wire
+		(pts
+			(xy 212.09 48.26) (xy 116.84 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e83602f-0385-4aea-b71d-8f4e65c92497")
+	)
+	(wire
+		(pts
+			(xy 199.39 143.51) (xy 212.09 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2003b6d1-2c38-4d58-bb73-291006fb306c")
+	)
+	(wire
+		(pts
+			(xy 187.96 105.41) (xy 233.68 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d61fcd-2694-4545-a309-3130602f9af8")
+	)
+	(wire
+		(pts
+			(xy 283.21 69.85) (xy 283.21 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f128f4-c50b-4ece-84de-ed1359c1eb8e")
+	)
+	(wire
+		(pts
+			(xy 209.55 74.93) (xy 209.55 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22584601-0da8-45e1-acb3-2e0409f393da")
+	)
+	(wire
+		(pts
+			(xy 45.72 238.76) (xy 74.93 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "236f6d12-0ab1-405e-9a5a-c845398ec583")
+	)
+	(wire
+		(pts
+			(xy 228.6 236.22) (xy 241.3 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "256b0983-9713-4d26-845a-c54f252ace07")
+	)
+	(wire
+		(pts
+			(xy 229.87 238.76) (xy 241.3 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28dd2c81-4ade-469e-9b19-c2e337a6823f")
+	)
+	(wire
+		(pts
+			(xy 123.19 181.61) (xy 123.19 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c63572b-ad11-4c02-9b42-f6b57ab1e276")
+	)
+	(wire
+		(pts
+			(xy 130.81 100.33) (xy 147.32 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d3a33b4-bdc2-419b-b818-f853f259ff4b")
+	)
+	(wire
+		(pts
+			(xy 233.68 113.03) (xy 220.98 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2daddda5-dac9-4df7-a117-aefe018691e6")
+	)
+	(wire
+		(pts
+			(xy 209.55 175.26) (xy 209.55 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f3efc9f-a960-4dfd-aec9-2474f79323eb")
+	)
+	(wire
+		(pts
+			(xy 73.66 143.51) (xy 73.66 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f49522e-f440-4cf4-81c9-1d4e606bd9a4")
+	)
+	(wire
+		(pts
+			(xy 73.66 181.61) (xy 73.66 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33757d61-a284-4456-a995-346753efdf0e")
+	)
+	(wire
+		(pts
+			(xy 115.57 231.14) (xy 133.35 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e7c1c0-3231-4279-9206-db66a8a27d34")
+	)
+	(wire
+		(pts
+			(xy 162.56 69.85) (xy 162.56 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36d792f5-8afe-4a76-bb4e-bf6269d07b0e")
+	)
+	(wire
+		(pts
+			(xy 81.28 48.26) (xy 81.28 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "379a2a2c-eae3-4c09-9002-f3f1b3771acb")
+	)
+	(wire
+		(pts
+			(xy 147.32 95.25) (xy 128.27 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3915ce9a-736c-457e-aafd-83aabaebb88c")
+	)
+	(wire
+		(pts
+			(xy 283.21 226.06) (xy 259.08 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393e7cd3-bb96-451d-8f72-c62beaba1f0e")
+	)
+	(wire
+		(pts
+			(xy 264.16 74.93) (xy 209.55 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a3a750b-4592-4817-9290-49154dd174de")
+	)
+	(wire
+		(pts
+			(xy 45.72 196.85) (xy 74.93 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a98569a-692d-4ab2-993e-9f9cb0d4c1b0")
+	)
+	(wire
+		(pts
+			(xy 212.09 48.26) (xy 212.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c1fa8c0-729f-43ba-9c3d-1dac6c64a17c")
+	)
+	(wire
+		(pts
+			(xy 232.41 120.65) (xy 232.41 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3caf0299-34c4-494c-a0c6-32857b97d4c4")
+	)
+	(wire
+		(pts
+			(xy 233.68 115.57) (xy 223.52 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e7a07ac-dab3-43cd-96fb-b01eeb49ea44")
+	)
+	(wire
+		(pts
+			(xy 162.56 69.85) (xy 123.19 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f5ec37b-2bc2-4fe1-b7a7-74ddcfa543de")
+	)
+	(wire
+		(pts
+			(xy 209.55 175.26) (xy 259.08 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f997f8c-cdda-428c-90f5-ae15660ee642")
+	)
+	(wire
+		(pts
+			(xy 212.09 158.75) (xy 212.09 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d17ae8-0ca6-4b4e-8a5e-e6bbd205dc6d")
+	)
+	(wire
+		(pts
+			(xy 212.09 210.82) (xy 212.09 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4349b7ca-3b5d-40f6-8d34-e50fec1983e3")
+	)
+	(wire
+		(pts
+			(xy 187.96 95.25) (xy 233.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "456db75e-1a4b-48ec-bd94-4ae7e7454766")
+	)
+	(wire
+		(pts
+			(xy 212.09 238.76) (xy 212.09 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "461be19b-1648-4a30-8d71-f00cea81c204")
+	)
+	(wire
+		(pts
+			(xy 69.85 212.09) (xy 69.85 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "467ca885-6db3-4766-be79-a6a300e24502")
+	)
+	(wire
+		(pts
+			(xy 162.56 22.86) (xy 162.56 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "496d1da4-4fa9-42de-b7e5-eb43be9052fe")
+	)
+	(wire
+		(pts
+			(xy 127 92.71) (xy 127 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49bfdf3d-ea68-48d4-9d1f-e4c818636153")
+	)
+	(wire
+		(pts
+			(xy 45.72 191.77) (xy 74.93 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a71a8ec-eb69-497c-821a-ab6e8398ea00")
+	)
+	(wire
+		(pts
+			(xy 69.85 137.16) (xy 69.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f3c7a6f-4a15-44a9-9e66-906c135e7115")
+	)
+	(wire
+		(pts
+			(xy 212.09 256.54) (xy 259.08 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52ec36f0-d28d-4ac5-aa97-636695c285c4")
+	)
+	(wire
+		(pts
+			(xy 233.68 128.27) (xy 228.6 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ac003f-ef94-4dc2-a666-4db555988f1c")
+	)
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 132.08 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553d1623-d10f-4fae-b06f-e6cc73623591")
+	)
+	(wire
+		(pts
+			(xy 187.96 90.17) (xy 233.68 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "571e1d2b-3195-4596-95f3-57d80b282956")
+	)
+	(wire
+		(pts
+			(xy 128.27 95.25) (xy 128.27 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573d452d-3846-480e-814f-8fd777d43946")
+	)
+	(wire
+		(pts
+			(xy 233.68 120.65) (xy 232.41 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e7ed04-d152-4840-976c-9b1d436ec6c2")
+	)
+	(wire
+		(pts
+			(xy 45.72 124.46) (xy 74.93 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "686e0ba4-6635-4f77-a67a-8bc7d4da2f98")
+	)
+	(wire
+		(pts
+			(xy 220.98 113.03) (xy 220.98 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68801e48-eb9f-4061-a33f-08a1deca1db0")
+	)
+	(wire
+		(pts
+			(xy 69.85 173.99) (xy 95.25 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69afd403-7d2d-4b7e-ae3a-dc885cc2c9dc")
+	)
+	(wire
+		(pts
+			(xy 102.87 143.51) (xy 123.19 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b1cec26-30c5-43d9-9c0e-d19f2269215a")
+	)
+	(wire
+		(pts
+			(xy 212.09 200.66) (xy 212.09 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b99bef0-7dd2-4f65-b4c0-7e353ff3c11b")
+	)
+	(wire
+		(pts
+			(xy 133.35 231.14) (xy 133.35 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bfd966f-3f45-4554-89e1-1263f04ea140")
+	)
+	(wire
+		(pts
+			(xy 233.68 125.73) (xy 229.87 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a28463-b278-4c72-959d-e9b688f33f17")
+	)
+	(wire
+		(pts
+			(xy 212.09 238.76) (xy 185.42 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bfc7e6-6a38-4f02-b894-9049a41c9575")
+	)
+	(wire
+		(pts
+			(xy 256.54 158.75) (xy 256.54 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72170b6d-8132-417f-9e46-8c7472f7a5bf")
+	)
+	(wire
+		(pts
+			(xy 209.55 170.18) (xy 209.55 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7481749a-cb86-4dd5-8bc1-6d588e8fdeb3")
+	)
+	(wire
+		(pts
+			(xy 184.15 161.29) (xy 212.09 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76673177-cd10-4271-a389-aecf7eaafbc8")
+	)
+	(wire
+		(pts
+			(xy 45.72 153.67) (xy 74.93 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a5c7d2-2764-4225-bc11-f7f4dedfc703")
+	)
+	(wire
+		(pts
+			(xy 251.46 69.85) (xy 162.56 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7902bc9f-8ea0-426a-859f-5bcb199f3f2a")
+	)
+	(wire
+		(pts
+			(xy 73.66 106.68) (xy 73.66 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a4fa02c-9651-44fa-ba45-43708b61d345")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 127 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3c2d08-d261-43a8-8769-a72520992d6a")
+	)
+	(wire
+		(pts
+			(xy 185.42 170.18) (xy 209.55 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d601ada-1256-45f0-b3cf-0e1c89e21c6c")
+	)
+	(wire
+		(pts
+			(xy 69.85 137.16) (xy 69.85 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f0948af-0297-4e9c-96a4-7d0a33bb7bc7")
+	)
+	(wire
+		(pts
+			(xy 83.82 22.86) (xy 83.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f88c7eb-ecfd-4cdc-9c60-70c2f2f2a97c")
+	)
+	(wire
+		(pts
+			(xy 147.32 102.87) (xy 132.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe2b650-bc9b-4ed7-ab7e-2f9939467e9c")
+	)
+	(wire
+		(pts
+			(xy 226.06 218.44) (xy 200.66 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "812074f0-c991-4921-b5d4-597617a6615d")
+	)
+	(wire
+		(pts
+			(xy 45.72 199.39) (xy 74.93 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813f2c91-ccca-4d1f-acf0-fe9ba64149e1")
+	)
+	(wire
+		(pts
+			(xy 83.82 106.68) (xy 90.17 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83445dea-4db1-47ce-8f35-26d4b444bacc")
+	)
+	(wire
+		(pts
+			(xy 212.09 158.75) (xy 212.09 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cccb8c8-072e-4c9f-9f72-6c3df2740718")
+	)
+	(wire
+		(pts
+			(xy 45.72 236.22) (xy 74.93 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e2ffd17-cf66-4dbd-8d03-b6f447f15440")
+	)
+	(wire
+		(pts
+			(xy 220.98 140.97) (xy 199.39 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910d8f92-aed7-43e8-95bc-193cfb3795a5")
+	)
+	(wire
+		(pts
+			(xy 147.32 90.17) (xy 125.73 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9225ac6e-6d29-475c-8405-ab7639f6365a")
+	)
+	(wire
+		(pts
+			(xy 134.62 233.68) (xy 115.57 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "957aab40-f89c-4881-b54b-20a3e2fd3c80")
+	)
+	(wire
+		(pts
+			(xy 185.42 200.66) (xy 212.09 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96469cb2-064b-4b08-ab7c-4c459bb17504")
+	)
+	(wire
+		(pts
+			(xy 45.72 231.14) (xy 74.93 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97634de3-a16b-4368-b34f-9a3ea62ba08b")
+	)
+	(wire
+		(pts
+			(xy 73.66 181.61) (xy 90.17 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9927d954-751c-4364-8024-77f38e6b7bf3")
+	)
+	(wire
+		(pts
+			(xy 223.52 180.34) (xy 200.66 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a031751-0c78-4cb9-8762-08808b313f45")
+	)
+	(wire
+		(pts
+			(xy 69.85 212.09) (xy 95.25 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f1f9dbf-dd50-4f12-8900-08c9937863ee")
+	)
+	(wire
+		(pts
+			(xy 212.09 118.11) (xy 212.09 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fd3becc-9dfb-4ac5-bbf8-68943645d770")
+	)
+	(wire
+		(pts
+			(xy 35.56 48.26) (xy 81.28 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41b38a7-2ef6-430a-aaa9-44fc330fdf6d")
+	)
+	(wire
+		(pts
+			(xy 45.72 161.29) (xy 74.93 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a53d3579-d903-4e89-9207-25cf7e056fd4")
+	)
+	(wire
+		(pts
+			(xy 45.72 116.84) (xy 74.93 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5bc8937-ed81-4948-9465-3d497ce008e6")
+	)
+	(wire
+		(pts
+			(xy 123.19 69.85) (xy 123.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a635ec6f-a10e-466f-8d88-f463ffbb01c3")
+	)
+	(wire
+		(pts
+			(xy 45.72 158.75) (xy 74.93 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7910a16-8f35-491e-a68e-8847fed4f57b")
+	)
+	(wire
+		(pts
+			(xy 167.64 118.11) (xy 212.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa5a6140-27cc-4461-8412-03cf434e3d59")
+	)
+	(wire
+		(pts
+			(xy 209.55 208.28) (xy 185.42 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aacbb122-8977-44bc-8654-43c1eba0afef")
+	)
+	(wire
+		(pts
+			(xy 212.09 182.88) (xy 212.09 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac6f2786-2269-4e3f-9ee8-c4a1b2e878a0")
+	)
+	(wire
+		(pts
+			(xy 69.85 173.99) (xy 69.85 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0395e9-1635-4137-9b3c-05d4933b5ab3")
+	)
+	(wire
+		(pts
+			(xy 45.72 194.31) (xy 74.93 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad3d1ea5-7932-48e1-8f10-2cf725423f46")
+	)
+	(wire
+		(pts
+			(xy 251.46 69.85) (xy 283.21 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b341bf80-ca31-46f1-83c4-e70136681124")
+	)
+	(wire
+		(pts
+			(xy 127 119.38) (xy 115.57 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b748a564-d2e4-4160-91fd-91055e556540")
+	)
+	(wire
+		(pts
+			(xy 226.06 118.11) (xy 226.06 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9128625-f3f9-4ed4-bf8c-56d07acdb73d")
+	)
+	(wire
+		(pts
+			(xy 212.09 210.82) (xy 259.08 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad0ec75-4d50-4701-9067-bf8bf8b3ee00")
+	)
+	(wire
+		(pts
+			(xy 123.19 143.51) (xy 123.19 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bae7bb37-b2de-41f8-95b1-b9780a097bcc")
+	)
+	(wire
+		(pts
+			(xy 129.54 97.79) (xy 147.32 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc10086c-7d09-41a7-8a51-79334bf548e8")
+	)
+	(wire
+		(pts
+			(xy 209.55 130.81) (xy 209.55 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e327d5-6646-4e4b-9dcd-1311e1c6cc7a")
+	)
+	(wire
+		(pts
+			(xy 69.85 251.46) (xy 95.25 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c20e0df8-43b3-4fe5-bc0e-ece3c61febfc")
+	)
+	(wire
+		(pts
+			(xy 187.96 102.87) (xy 233.68 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c26c9ea1-c57a-4344-bf1d-07b2f04a422c")
+	)
+	(wire
+		(pts
+			(xy 128.27 153.67) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c41cd386-1064-4617-b69d-b437542be9ee")
+	)
+	(wire
+		(pts
+			(xy 200.66 220.98) (xy 212.09 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4ac4952-4607-44c8-a370-2faba1c18478")
+	)
+	(wire
+		(pts
+			(xy 132.08 194.31) (xy 115.57 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6a5c5ef-f930-4cd8-a92d-d984e512fc06")
+	)
+	(wire
+		(pts
+			(xy 73.66 143.51) (xy 90.17 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c86a01d0-6f30-4b70-878d-bbe6e6ef28c3")
+	)
+	(wire
+		(pts
+			(xy 45.72 121.92) (xy 74.93 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8881a3d-0d0f-4d89-81fe-da74048b80dc")
+	)
+	(wire
+		(pts
+			(xy 102.87 181.61) (xy 123.19 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89b891a-0734-4dff-9540-389aeee2a790")
+	)
+	(wire
+		(pts
+			(xy 233.68 118.11) (xy 226.06 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbf9d51-5353-4cba-acdf-4aa41d6126a8")
+	)
+	(wire
+		(pts
+			(xy 228.6 128.27) (xy 228.6 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbfba975-7721-4e3e-9a2e-09be62b1953c")
+	)
+	(wire
+		(pts
+			(xy 45.72 156.21) (xy 74.93 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd5885fd-ff7d-4540-955c-c8e649db8506")
+	)
+	(wire
+		(pts
+			(xy 116.84 22.86) (xy 162.56 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce115133-028c-4e84-8dcc-cf73ded3fed2")
+	)
+	(wire
+		(pts
+			(xy 187.96 107.95) (xy 233.68 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf10f45d-00ca-41da-9603-58b93bbcb35a")
+	)
+	(wire
+		(pts
+			(xy 147.32 107.95) (xy 134.62 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d33ccb7b-7858-4deb-8f38-541160cd3dd4")
+	)
+	(wire
+		(pts
+			(xy 123.19 220.98) (xy 102.87 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d74952-54ae-4051-abe5-ad07f9a9eee1")
+	)
+	(wire
+		(pts
+			(xy 187.96 100.33) (xy 233.68 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d56862ee-5e57-4bbf-b2ec-63f7561154fb")
+	)
+	(wire
+		(pts
+			(xy 35.56 22.86) (xy 83.82 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d65df611-a234-4e27-b4cd-45ddf3bd09ca")
+	)
+	(wire
+		(pts
+			(xy 123.19 106.68) (xy 123.19 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d727583c-d730-45f2-83ad-6b4dc4b83ac6")
+	)
+	(wire
+		(pts
+			(xy 233.68 123.19) (xy 231.14 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c3755b-a29f-46be-9ab8-2cc181b8cb0e")
+	)
+	(wire
+		(pts
+			(xy 231.14 187.96) (xy 241.3 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9bd739d-1e11-4f0b-88e3-9f69a98b8ed2")
+	)
+	(wire
+		(pts
+			(xy 212.09 161.29) (xy 212.09 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc005b60-6034-45d0-874d-58b8bad49d7c")
+	)
+	(wire
+		(pts
+			(xy 45.72 233.68) (xy 74.93 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd6e785d-6b46-4e8c-bc84-4683395a6e64")
+	)
+	(wire
+		(pts
+			(xy 83.82 106.68) (xy 73.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbb7f4f-0e52-4bbb-873b-b85726cb1349")
+	)
+	(wire
+		(pts
+			(xy 251.46 80.01) (xy 251.46 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df60512e-4675-4773-b160-6a2795dacf52")
+	)
+	(wire
+		(pts
+			(xy 223.52 115.57) (xy 223.52 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5fdec86-cd09-4a00-badf-3394a785f3a7")
+	)
+	(wire
+		(pts
+			(xy 69.85 104.14) (xy 81.28 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6e0ad99-b40b-4c95-82a7-765f0f2d17c9")
+	)
+	(wire
+		(pts
+			(xy 231.14 123.19) (xy 231.14 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e940e29f-ca74-4e3e-8334-f261513011b1")
+	)
+	(wire
+		(pts
+			(xy 125.73 116.84) (xy 115.57 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9f7d4ec-d403-42ff-b2e1-f13f81dcf019")
+	)
+	(wire
+		(pts
+			(xy 83.82 22.86) (xy 104.14 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec740eff-2edf-4d1e-a536-16f40c230dca")
+	)
+	(wire
+		(pts
+			(xy 129.54 156.21) (xy 129.54 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb8aad7-f9dc-46f4-b252-23f62d64191b")
+	)
+	(wire
+		(pts
+			(xy 125.73 90.17) (xy 125.73 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd92c6f-b30a-49ac-a7c6-cb9032b6f28b")
+	)
+	(wire
+		(pts
+			(xy 115.57 191.77) (xy 130.81 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4abdad6-ba43-4659-b812-8f41fdb0e8da")
+	)
+	(wire
+		(pts
+			(xy 133.35 105.41) (xy 147.32 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b7ab77-271b-4fe5-8efc-8e0b5a1dd386")
+	)
+	(wire
+		(pts
+			(xy 102.87 106.68) (xy 123.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb45d439-02fc-4bcc-b5c2-ed71baddbee1")
+	)
+	(wire
+		(pts
+			(xy 115.57 156.21) (xy 129.54 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe4d6c0a-8d01-45c1-9ca3-ca6f8ece19ce")
+	)
+	(wire
+		(pts
+			(xy 229.87 125.73) (xy 229.87 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5fc94d-2b8b-4ec1-a913-dea925159579")
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:ISM330DHCX_IMU_Module")
+		(at 259.08 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09d804f4-4fdf-4ed2-9bb6-b7696e98fc69")
+		(property "Reference" "U9"
+			(at 246.38 178.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ISM330DHCX (6-Axis IMU)"
+			(at 259.08 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 259.08 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "110dc30f-9897-45f7-b832-2b52b9f874d1")
+		)
+		(pin "2"
+			(uuid "fff149eb-a53c-4949-a21d-c8a0cd1fad39")
+		)
+		(pin "3"
+			(uuid "8d17a004-53a0-482e-9d9f-c4b72ec6eec5")
+		)
+		(pin "4"
+			(uuid "aa5bf21d-dd94-4bb6-a0e8-41ba2083d642")
+		)
+		(pin "5"
+			(uuid "d2a680ab-01c5-4215-ab64-58db840b53c5")
+		)
+		(pin "6"
+			(uuid "2be5cc1c-a798-4a57-bba3-c67e0eb4dd43")
+		)
+		(pin "7"
+			(uuid "33cb4a35-088e-4927-9c76-7bdbb1800ead")
+		)
+		(pin "8"
+			(uuid "8b4b03f1-3d58-49e3-8589-98e6ed11d858")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:DM320T_Driver")
+		(at 95.25 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d9477e7-7edf-4aae-b18e-5fcc9f7796a9")
+		(property "Reference" "U5"
+			(at 80.01 224.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Gantry_Driver (DM320T)"
+			(at 95.25 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "225d9487-4255-4817-b592-613297fc0d62")
+		)
+		(pin "4"
+			(uuid "67f226fb-21af-4d3f-aace-1238378ee35e")
+		)
+		(pin "7"
+			(uuid "8e498601-db39-47af-849e-8a441717a939")
+		)
+		(pin "5"
+			(uuid "7f8660b1-3db9-4890-a80d-1ad371175407")
+		)
+		(pin "6"
+			(uuid "15a25e6c-2059-48bb-b0ce-7748cea6afba")
+		)
+		(pin "2"
+			(uuid "33ddcaa5-0086-451f-9bd7-a51c311c15bd")
+		)
+		(pin "8"
+			(uuid "1ec9f482-1d25-474f-b2c3-82a7e3aa27bf")
+		)
+		(pin "1"
+			(uuid "1be4cdd1-017c-4530-bd60-75e287f2643a")
+		)
+		(pin "3"
+			(uuid "b74982e4-79fc-4b3d-b990-425d964be7c0")
+		)
+		(pin "9"
+			(uuid "d8577a2d-c20a-4113-bbb0-8fdb8043bf7d")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_Ultrasonic_Sensor")
+		(at 508 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24f55f41-502b-4e69-b59d-f96f12b4318a")
+		(property "Reference" "U16"
+			(at 497.84 221.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_Ultrasonic_2"
+			(at 508 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "44c42d41-43fe-4d7c-ba07-bfbe3da35093")
+		)
+		(pin "1"
+			(uuid "5b6d2ee0-69a1-4337-8a9c-108373490d9f")
+		)
+		(pin "4"
+			(uuid "8e5ca457-c78f-46e9-b6cc-1400249236cc")
+		)
+		(pin "3"
+			(uuid "6bbccea7-0f96-4c67-ab8a-3fdd272a6b06")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_ToF_Sensor")
+		(at 508 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3271b48d-3a7b-4075-aa8a-9a51dddfca3e")
+		(property "Reference" "U13"
+			(at 497.84 76.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_HighRes_ToF_SLAM"
+			(at 508 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9dc49e8b-768b-4fcd-8a4d-09a7133c8a08")
+		)
+		(pin "4"
+			(uuid "2385e34c-36d8-47ce-bab0-5291a739db86")
+		)
+		(pin "1"
+			(uuid "662ee490-84df-4a5b-918c-c81a41e70522")
+		)
+		(pin "3"
+			(uuid "dae42977-b6d5-4d5d-821a-920429fff29c")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_ToF_Sensor")
+		(at 508 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "363b01c5-0129-4437-8005-a3d4d456dfec")
+		(property "Reference" "U14"
+			(at 497.84 125.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_SinglePt_ToF_SLAM"
+			(at 508 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91259cd8-4f63-4e70-9674-2b15c8e5614d")
+		)
+		(pin "2"
+			(uuid "79f3d0d4-fbba-4e51-8f84-8861bcccae49")
+		)
+		(pin "4"
+			(uuid "8352b117-3998-46ba-b06c-0f262517e792")
+		)
+		(pin "3"
+			(uuid "11c2e72e-208d-4b11-b1e5-c163f69f9f1b")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:MeanWell_SKMW40F_05")
+		(at 109.22 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a8beb97-010d-4e34-a268-d722118f8f54")
+		(property "Reference" "U1"
+			(at 93.98 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mean Well SKMW40F-05 (24V->5V 40W)"
+			(at 109.22 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f05a1612-a12c-4519-bf5c-15d352c0d7e7")
+		)
+		(pin "2"
+			(uuid "bf439514-d001-46b0-bc01-53ef0cc512a1")
+		)
+		(pin "3"
+			(uuid "e84654d8-4601-41f1-983e-fb722e1b6b27")
+		)
+		(pin "4"
+			(uuid "9c7ab1c4-46ef-465e-a721-5d1fffc09693")
+		)
+		(pin "5"
+			(uuid "5d1ee6af-bb08-4f62-bba2-5ac72eea2b92")
+		)
+		(pin "6"
+			(uuid "3c39e460-3ce8-486b-9100-6e548dc1dc27")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:NEMA17_17HE19_2004S")
+		(at 30.48 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3cc685a0-8dc9-4996-91cc-5b8c3d9e8a64")
+		(property "Reference" "M3"
+			(at 20.32 187.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Motor_3 (17HE19-2004S)"
+			(at 36.068 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "9f8fb8cb-3b1e-4947-aa66-435211ce690d")
+		)
+		(pin "2"
+			(uuid "4ea88441-810d-486e-92ff-a9e31d60731a")
+		)
+		(pin "4"
+			(uuid "165675af-1d14-416a-9412-1f35eb8b53c1")
+		)
+		(pin "1"
+			(uuid "28dc0c85-8e7c-48b6-a57d-5aa542caedaa")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:AS5600_Encoder")
+		(at 185.42 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "432ade74-146e-43aa-bd9d-c8e2e2840ee6")
+		(property "Reference" "U8"
+			(at 175.26 211.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Enc_3 (AS5600)"
+			(at 185.42 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "72e36dd8-7fb0-46e0-a9f9-9decb53b8bdd")
+		)
+		(pin "3"
+			(uuid "09e252db-2bcc-4035-ba61-f7915f9804ab")
+		)
+		(pin "4"
+			(uuid "282cadda-37ae-4f35-9fe6-7b7ff1b1ecb1")
+		)
+		(pin "1"
+			(uuid "6d8ebf74-d107-4cc6-9585-d40f44f5dfee")
+		)
+		(pin "6"
+			(uuid "ebe194b3-95bf-413c-a072-b7b7b2a80787")
+		)
+		(pin "5"
+			(uuid "1f2556bf-1567-4c5a-9fc7-a46052e82634")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:NEMA17_17HE19_2004S")
+		(at 30.48 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e7604c1-3ec9-4986-8091-35c82443d5ba")
+		(property "Reference" "M2"
+			(at 20.32 149.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Motor_2 (17HE19-2004S)"
+			(at 35.052 173.228 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8aa6959a-0821-4cf9-a597-7904eb13e06e")
+		)
+		(pin "2"
+			(uuid "d6b45591-fd75-4b86-a225-58f6a19ecf7b")
+		)
+		(pin "3"
+			(uuid "b3b33832-b11c-44d8-be1d-a0096673295b")
+		)
+		(pin "4"
+			(uuid "ff61ae4a-2247-4e2b-8927-b925c07d1e58")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_Sensor_Suite_MCU")
+		(at 508 330.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "54626807-ec11-48ba-92a1-b83a8c26b371")
+		(property "Reference" "U18"
+			(at 495.3 318.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_Sensor_Suite_MCU"
+			(at 508 347.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 330.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2a916086-8ccb-4184-b4c4-0c517b29db84")
+		)
+		(pin "1"
+			(uuid "6d70d20e-50dd-41ae-8e3b-10e7b5640d6a")
+		)
+		(pin "3"
+			(uuid "97dd007e-2d7b-454c-a3e2-8449336f2881")
+		)
+		(pin "4"
+			(uuid "e44fb97f-2310-471e-a487-d28d111cdaa0")
+		)
+		(pin "5"
+			(uuid "55af5788-7a8f-4a7b-856e-99726c91c897")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_Tethered_24V_PSU")
+		(at 35.56 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "561ce4d9-a492-4e8d-a610-e381c28a2af1")
+		(property "Reference" "PS1"
+			(at 25.4 26.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_Tethered_24V_PSU"
+			(at 35.56 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b5cd8436-a401-465f-8d4b-302f5bdb9f44")
+		)
+		(pin "1"
+			(uuid "f8fb5cef-1989-4494-bb8f-bee10c613c08")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "PS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_5GHz_WiFi_Uplink")
+		(at 508 279.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "69495cbb-d43e-4801-b941-baff73074f96")
+		(property "Reference" "U17"
+			(at 497.84 269.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_5GHz_WiFi_Uplink"
+			(at 508 294.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 279.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a995d9f-da0a-4efa-a653-0a78647b3bf6")
+		)
+		(pin "2"
+			(uuid "f74c8104-fc70-46a6-8da8-f71567e04919")
+		)
+		(pin "4"
+			(uuid "f9c74b7a-5327-4e88-a4f4-9985d19c9b39")
+		)
+		(pin "3"
+			(uuid "12f389b6-f7ba-4f28-aaf8-412044450e67")
+		)
+		(pin "5"
+			(uuid "fbdbd1e1-67eb-4ccc-89c4-b1361776e26c")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:NEMA17_17HE19_2004S")
+		(at 30.48 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b12fb79-6f45-4d03-9d49-2a324d8203dc")
+		(property "Reference" "M4"
+			(at 20.32 226.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Gantry_Motor (17HE19-2004S)"
+			(at 33.782 246.888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4eb6760c-ccfc-40ab-afb8-600e08f77c5a")
+		)
+		(pin "2"
+			(uuid "05e3557d-20dc-49da-8dbf-642e292d1039")
+		)
+		(pin "4"
+			(uuid "32aac8d1-61f1-40ba-badb-35cbb4c08f54")
+		)
+		(pin "1"
+			(uuid "a0b653a0-7515-428b-b9e0-906238956f85")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "M4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:DM320T_Driver")
+		(at 95.25 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73854e9e-3026-4181-9955-f9f85779ba4b")
+		(property "Reference" "U4"
+			(at 80.01 184.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Driver_3 (DM320T)"
+			(at 95.25 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0000bde-7ee8-44ea-bd51-7961d2eeb3eb")
+		)
+		(pin "7"
+			(uuid "60b7fd29-1821-4062-804b-ae66a93c9d6e")
+		)
+		(pin "6"
+			(uuid "811a742d-850f-468b-bd88-32131a9fe85f")
+		)
+		(pin "3"
+			(uuid "569fab50-a4c2-4d78-8b99-403172ace54e")
+		)
+		(pin "2"
+			(uuid "ec9faeed-e8cb-48e8-9add-b6cb1853aee8")
+		)
+		(pin "4"
+			(uuid "c0f565de-9e3f-49cc-ba84-5d11a7074c61")
+		)
+		(pin "5"
+			(uuid "b0b0c3bb-3417-43d4-baaa-285ccb93e7bb")
+		)
+		(pin "8"
+			(uuid "b66859ff-6337-435d-95c7-fbb0a65fa7d0")
+		)
+		(pin "9"
+			(uuid "4a63e890-07f5-41a8-bd65-34619c57ff6a")
+		)
+		(pin "10"
+			(uuid "2262afec-6954-4a02-8eb1-8186e74c0532")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:DM320T_Driver")
+		(at 95.25 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7992f4dd-37da-40f1-92c8-a6ae2d454397")
+		(property "Reference" "U3"
+			(at 80.01 146.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Driver_2 (DM320T)"
+			(at 95.25 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "39bc325a-92a3-4e68-a9b4-8d24ecd5adaf")
+		)
+		(pin "2"
+			(uuid "dbe243cd-ea22-44c4-9846-d8a0991792aa")
+		)
+		(pin "3"
+			(uuid "1db8052e-0a21-4e7c-87dd-15f74208fd69")
+		)
+		(pin "4"
+			(uuid "179c6c3c-ed1c-4bdc-86b0-b951d03e7517")
+		)
+		(pin "5"
+			(uuid "2ee017e5-c3ea-4826-81c8-f39d8292bf96")
+		)
+		(pin "6"
+			(uuid "52aaa3ce-21b8-4bef-bbed-2586d3dad112")
+		)
+		(pin "7"
+			(uuid "5d4d2aff-26c8-4201-a73d-55591adc7510")
+		)
+		(pin "10"
+			(uuid "13e8cdd8-0c92-461e-886e-6002e7ef109c")
+		)
+		(pin "9"
+			(uuid "3a25bde7-d5fa-42ba-9cdb-a57db5de02b5")
+		)
+		(pin "8"
+			(uuid "dd55c00e-9847-4472-95fb-5064a9be6571")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:TBD62083APG")
+		(at 167.64 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "86f1fb40-a6eb-421f-83a2-e1be5ecd42de")
+		(property "Reference" "U19"
+			(at 152.4 83.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TBD62083APG (8-Ch DMOS Driver)"
+			(at 167.64 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "2135a885-2cc7-4cfd-89af-62793fd95877")
+		)
+		(pin "9"
+			(uuid "ab3a3302-1ea3-4ad6-a7bb-7447f41dfb2f")
+		)
+		(pin "18"
+			(uuid "79818e72-98aa-4578-945a-05edf670c376")
+		)
+		(pin "17"
+			(uuid "c2061381-6fc6-43fd-bd9c-e40639951687")
+		)
+		(pin "16"
+			(uuid "06507817-3fe1-4941-9550-125dbd12a6c3")
+		)
+		(pin "15"
+			(uuid "9be01238-dde1-4980-9be4-4fc6ef697f30")
+		)
+		(pin "14"
+			(uuid "4c985c18-1469-4880-b88e-37a24c9469f2")
+		)
+		(pin "13"
+			(uuid "427fb771-74c9-426f-9025-091a6e13d572")
+		)
+		(pin "12"
+			(uuid "60502ae9-c979-457f-9b61-5a7dea40af1f")
+		)
+		(pin "11"
+			(uuid "ff706aae-582b-4753-b01f-322c798b0ded")
+		)
+		(pin "1"
+			(uuid "ff839924-331d-442a-b3f5-41be73294af6")
+		)
+		(pin "2"
+			(uuid "77a7b856-4f55-42d2-8f6d-5fe84c28370a")
+		)
+		(pin "3"
+			(uuid "47ecba40-1147-4fd3-a1dd-32c18930d4d0")
+		)
+		(pin "4"
+			(uuid "90e236e4-557d-4be3-9fa8-8d6ef56adcb0")
+		)
+		(pin "5"
+			(uuid "8be8c0e2-7a09-430c-a52f-5d47d866b470")
+		)
+		(pin "6"
+			(uuid "d039f334-3c89-43ef-8fb3-c611fbb10eed")
+		)
+		(pin "7"
+			(uuid "f2b01e2a-3027-40dd-9808-c25dce67ccea")
+		)
+		(pin "8"
+			(uuid "571a79ab-b545-4f55-81e8-098a24524c4e")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:DM320T_Driver")
+		(at 95.25 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8de62f38-7f33-436d-84a4-1231a19edbb4")
+		(property "Reference" "U2"
+			(at 80.01 109.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Driver_1 (DM320T)"
+			(at 95.25 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "dc2818a2-bc30-4dde-ba69-015fa5d2f018")
+		)
+		(pin "8"
+			(uuid "92652268-edbf-448f-b08e-ea48e32b3a79")
+		)
+		(pin "2"
+			(uuid "ea6221ca-4d6e-48ea-b848-5434fe0c9604")
+		)
+		(pin "5"
+			(uuid "f0ed7817-5cda-464b-93e7-8ce4f3b27d05")
+		)
+		(pin "9"
+			(uuid "82310015-c716-4a68-bd45-2e9e19f91acd")
+		)
+		(pin "6"
+			(uuid "03032523-1be9-49f1-8957-2aedbb27d8af")
+		)
+		(pin "3"
+			(uuid "efc45565-1cef-41bd-8c7c-3dc23e550bfb")
+		)
+		(pin "1"
+			(uuid "3068264f-3f1c-4c2d-b1da-843954a7e772")
+		)
+		(pin "7"
+			(uuid "29ee9ebf-9e74-4f1e-b4c7-bba279a11884")
+		)
+		(pin "10"
+			(uuid "359f6e2d-d677-40ec-8f1b-e92212796ad3")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_Ultrasonic_Sensor")
+		(at 508 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92771312-cb7f-4e43-8d82-ef93e60ea036")
+		(property "Reference" "U15"
+			(at 497.84 173.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_Ultrasonic_1"
+			(at 508 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 508 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c5adefc3-d7ac-43a0-acdd-f54193e1a325")
+		)
+		(pin "3"
+			(uuid "a3a793a6-4059-4751-b20c-18fadc9d6904")
+		)
+		(pin "1"
+			(uuid "d0d12f12-0393-4c31-9deb-cce23af943c2")
+		)
+		(pin "4"
+			(uuid "ed29732b-74bb-4f2f-90d6-790da6639a44")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:HC05_Bluetooth_Module")
+		(at 259.08 241.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "98b8e775-f91b-4b9a-b80d-c905f69c6da6")
+		(property "Reference" "U10"
+			(at 246.38 229.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HC-05 (Bluetooth Serial)"
+			(at 259.08 259.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 259.08 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b86aaacc-ea79-473b-ac9e-ab33a1ca62cd")
+		)
+		(pin "2"
+			(uuid "a0ad6617-71e2-4187-9410-b654b470e1a8")
+		)
+		(pin "3"
+			(uuid "d6ee00ba-d716-40c3-a65a-289ab24d771f")
+		)
+		(pin "4"
+			(uuid "486bf627-0a6a-4164-863a-6c7ec81ee584")
+		)
+		(pin "5"
+			(uuid "c7206636-da46-4290-8e15-e648e1a10c5b")
+		)
+		(pin "6"
+			(uuid "e824dc4f-2de6-4ae0-b7df-88e5ce6469ea")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:NUCLEO_L432KC")
+		(at 256.54 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a11a8a14-a210-4d7d-af7c-594bb5fc2d21")
+		(property "Reference" "U11"
+			(at 238.76 83.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NUCLEO-L432KC (Motor MCU)"
+			(at 257.302 136.906 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "CN4-4"
+			(uuid "4543bb62-6016-4ecb-97e6-9b0bfbbcbc8d")
+		)
+		(pin "CN4-14"
+			(uuid "976a47f8-b5bf-4f69-adff-f46d3b3d0faa")
+		)
+		(pin "CN3-4"
+			(uuid "aebdd8fe-c4cb-4d68-af28-7a15756f3b78")
+		)
+		(pin "CN3-5"
+			(uuid "b53efddf-7b38-4a19-9818-6dedd3e65cea")
+		)
+		(pin "CN3-6"
+			(uuid "aff8a3b2-cf51-441c-88aa-cfc8fe23cf2d")
+		)
+		(pin "CN3-9"
+			(uuid "58fedea4-1ac2-41f9-b2dc-dda2123b4220")
+		)
+		(pin "CN3-12"
+			(uuid "1b90363d-3aab-4f32-9c61-cb5853d7a3ff")
+		)
+		(pin "CN3-13"
+			(uuid "9143807c-0ceb-4e59-8fd0-9c569dd167f0")
+		)
+		(pin "CN3-14"
+			(uuid "a4f89d59-5ae3-48e4-abad-b5d378941a23")
+		)
+		(pin "CN3-15"
+			(uuid "025cdc7b-e39e-4106-80c7-8c642ed2faa4")
+		)
+		(pin "CN4-9"
+			(uuid "17e7c0f3-d7b3-4284-8439-0bb077e1a837")
+		)
+		(pin "CN4-12"
+			(uuid "70f8aadc-2ccf-4968-939e-232a41926243")
+		)
+		(pin "CN4-11"
+			(uuid "79a384ce-bb2e-40a7-9103-b128e2e35809")
+		)
+		(pin "CN4-10"
+			(uuid "dc91fa25-a0bc-4edf-85b9-b3d3c070b454")
+		)
+		(pin "CN3-7"
+			(uuid "8a714b87-f09f-43b8-8a0b-b844f9e8787a")
+		)
+		(pin "CN3-8"
+			(uuid "f0c5dbaa-c498-498c-befe-4fdb823c6e38")
+		)
+		(pin "CN3-1"
+			(uuid "46b1d9f5-79f1-4be9-9c30-bf9043844bda")
+		)
+		(pin "CN3-2"
+			(uuid "fc543d46-c9c8-4dc6-abb1-5c3d11dfe289")
+		)
+		(pin "CN4-6"
+			(uuid "d28bf8c4-6efd-4469-b2d0-6d80967df9a8")
+		)
+		(pin "CN4-15"
+			(uuid "b7cba357-96b5-44f9-ba6e-c14ec6083ffd")
+		)
+		(pin "CN1"
+			(uuid "eaf99aa0-b81c-4ed9-8307-1059fe6236be")
+		)
+		(pin "CN4-1"
+			(uuid "88c4f66b-82af-4f9e-8aee-0617f57812f5")
+		)
+		(pin "CN3-3"
+			(uuid "a6b1acf2-ec93-4757-99bb-36d27937e6f6")
+		)
+		(pin "CN4-13"
+			(uuid "c67e2058-0bce-463b-a1f3-2546a2d0ea40")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:NEMA17_17HE19_2004S")
+		(at 30.48 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6729745-0527-44c2-a41c-f67b65ed9231")
+		(property "Reference" "M1"
+			(at 20.32 112.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Motor_1 (17HE19-2004S)"
+			(at 35.052 133.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74c90238-2ff5-4224-a987-dd95fd0e1a33")
+		)
+		(pin "2"
+			(uuid "32c3cd47-0f74-471e-869f-6a1299d6b0ff")
+		)
+		(pin "3"
+			(uuid "d3ab09bf-e245-44a0-aed3-90e559dd3617")
+		)
+		(pin "4"
+			(uuid "d8ced880-9aa1-42e6-a850-e3afc9a01fb4")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:Unspecified_Main_Computer")
+		(at 342.9 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "da8a8ef6-f1f2-4840-af77-ba2a6914b2c7")
+		(property "Reference" "U12"
+			(at 325.12 165.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Unspecified_Main_Computer"
+			(at 342.9 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 342.9 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 342.9 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "bfd8f9ca-881c-470a-a55d-71c7d3da11f9")
+		)
+		(pin "1"
+			(uuid "507d1c55-f99a-42d3-8064-212d5f8e67bf")
+		)
+		(pin "2"
+			(uuid "beec8825-5a63-4bea-92c9-2d23510c94aa")
+		)
+		(pin "3"
+			(uuid "4fe1b85e-622e-438e-b30b-edf51bb8c786")
+		)
+		(pin "4"
+			(uuid "0093ba32-5c53-46c5-8c36-6aa9be1ca1ee")
+		)
+		(pin "5"
+			(uuid "674a9473-f2d5-484d-886c-b44b84d7ac66")
+		)
+		(pin "6"
+			(uuid "7d1848da-769a-4c9b-87ca-abc4009f18eb")
+		)
+		(pin "11"
+			(uuid "1933e465-1294-4b17-9d42-92c7b67a89a7")
+		)
+		(pin "10"
+			(uuid "e6c75fcf-2d6e-494f-b7c2-7129138f0076")
+		)
+		(pin "12"
+			(uuid "ed67dbcd-2933-4a5d-bb6a-c36eb2bdaadb")
+		)
+		(pin "8"
+			(uuid "53722005-848a-4160-a204-1592552c757e")
+		)
+		(pin "13"
+			(uuid "5b7d0733-bdbc-4dbe-b7dd-4c9469004336")
+		)
+		(pin "9"
+			(uuid "1ddea3a5-6058-4291-9a70-0472ed5aaa1a")
+		)
+		(pin "14"
+			(uuid "4f894aba-ed5e-4172-bc93-86468b0636d7")
+		)
+		(pin "15"
+			(uuid "bfdad08f-5523-4e79-9c51-8553d4471178")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:AS5600_Encoder")
+		(at 184.15 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dcb2978b-7522-4eaf-9db5-525c4ef866c2")
+		(property "Reference" "U6"
+			(at 173.99 133.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Enc_1 (AS5600)"
+			(at 184.15 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 184.15 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "bdd6f82b-91cb-4730-924d-f24dde5ee502")
+		)
+		(pin "1"
+			(uuid "3fdbcbbc-24ec-4e9e-b432-870d8f3b93cf")
+		)
+		(pin "2"
+			(uuid "59fdba9b-a9a8-4af6-a0a3-44ee57cd39e6")
+		)
+		(pin "3"
+			(uuid "a329d3bd-a8e6-4b32-ba2b-d03b005b2f9b")
+		)
+		(pin "4"
+			(uuid "cf16787e-6db0-4725-ba0d-7c036a99f811")
+		)
+		(pin "5"
+			(uuid "9dc1a9b9-8c9f-4e3b-8987-731e0ff2f8e2")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MECH5080_Parts:AS5600_Encoder")
+		(at 185.42 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eff487d3-6117-413f-9b21-f586345ac4b7")
+		(property "Reference" "U7"
+			(at 175.26 173.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Wheel_Enc_2 (AS5600)"
+			(at 185.42 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "112aaa38-3f21-468b-8bdc-fe1922a45068")
+		)
+		(pin "1"
+			(uuid "afe6d3e6-25a2-4ddb-855f-c6778b41eddd")
+		)
+		(pin "2"
+			(uuid "80c6a8fe-9776-455e-9fd4-66272865df9d")
+		)
+		(pin "3"
+			(uuid "dfed8347-71bb-4472-ba9b-37de18647af9")
+		)
+		(pin "4"
+			(uuid "0a183703-e827-4946-871a-f8d4c279d898")
+		)
+		(pin "6"
+			(uuid "7721225e-1007-4247-803b-3a4d265ab47c")
+		)
+		(instances
+			(project "ElectricalWiringSchematic"
+				(path "/b0f0d541-6278-4ef4-a702-4184565df2b7"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

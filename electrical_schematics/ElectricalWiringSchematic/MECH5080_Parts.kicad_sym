@@ -1,0 +1,1698 @@
+(kicad_symbol_lib
+  (version 20231120)
+  (generator "custom_mech5080")
+  (generator_version "10.0")
+  (symbol "NEMA17_17HE19_2004S"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "M" (at -10.16 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "NEMA17_17HE19_2004S" (at 0 -15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Selected: NEMA 17 Bipolar Stepper Motor 17HE19-2004S" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "NEMA17_17HE19_2004S_0_1"
+      (rectangle (start -10.16 7.62) (end 10.16 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "NEMA17_17HE19_2004S_1_1"
+      (pin passive line (at 15.24 5.08 180) (length 5.08)
+        (name "A+_BLK" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 2.54 180) (length 5.08)
+        (name "A-_BLU" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 0.00 180) (length 5.08)
+        (name "B+_GRN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 -2.54 180) (length 5.08)
+        (name "B-_RED" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "DM320T_Driver"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -15.24 17.78 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "DM320T_Driver" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Selected: StepperOnline DM320T Digital Stepper Driver" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "DM320T_Driver_0_1"
+      (rectangle (start -15.24 10.16) (end 15.24 -10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "+Vdc_24V" (at -5.08 8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "OPTO_5V" (at 7.62 8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "DM320T_Driver_1_1"
+      (pin power_in line (at -5.08 15.24 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 7.62 15.24 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -15.24 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -20.32 5.08 0) (length 5.08)
+        (name "A+" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -20.32 2.54 0) (length 5.08)
+        (name "A-" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -20.32 0.00 0) (length 5.08)
+        (name "B+" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -20.32 -2.54 0) (length 5.08)
+        (name "B-" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 20.32 5.08 180) (length 5.08)
+        (name "PUL" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 20.32 2.54 180) (length 5.08)
+        (name "DIR" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 20.32 0.00 180) (length 5.08)
+        (name "ENA" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "AS5600_Encoder"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -10.16 17.78 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "AS5600_Encoder" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Selected: AS5600 Magnetic Rotary Encoder Module" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "AS5600_Encoder_0_1"
+      (rectangle (start -10.16 10.16) (end 10.16 -10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC" (at 0.00 8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "AS5600_Encoder_1_1"
+      (pin power_in line (at 0.00 15.24 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -15.24 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 5.08 180) (length 5.08)
+        (name "OUT" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 15.24 2.54 180) (length 5.08)
+        (name "DIR" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 15.24 0.00 180) (length 5.08)
+        (name "SCL" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 15.24 -2.54 180) (length 5.08)
+        (name "SDA" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "TBD62083APG"
+  	(pin_names (offset 1.016))
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at -15.24 25.4 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects (font (size 1.27 1.27)) (justify left))
+  	)
+  	(property "Value" "TBD62083APG"
+  		(at 0 -17.78 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(property "Description" "Toshiba TBD62083APG 8-Ch DMOS Low-Side Sink Driver (PDIP-18, 3.3V Input, 50V/500mA Out)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(symbol "TBD62083APG_0_1"
+  		(rectangle (start -15.24 17.78) (end 15.24 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))
+  		(text "COM_5V"
+  			(at -5.08 15.875 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  		(text "GND"
+  			(at 0 -8.255 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  	)
+  	(symbol "TBD62083APG_1_1"
+  		(pin power_in line
+  			(at -5.08 22.86 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "10"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin power_in line
+  			(at 0 -15.24 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "9"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 12.7 0)
+  			(length 5.08)
+  			(name "O1"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "18"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 10.16 0)
+  			(length 5.08)
+  			(name "O2"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "17"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 7.62 0)
+  			(length 5.08)
+  			(name "O3"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "16"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 5.08 0)
+  			(length 5.08)
+  			(name "O4"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "15"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 2.54 0)
+  			(length 5.08)
+  			(name "O5"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "14"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 0 0)
+  			(length 5.08)
+  			(name "O6"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "13"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 -2.54 0)
+  			(length 5.08)
+  			(name "O7"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "12"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin output line
+  			(at -20.32 -5.08 0)
+  			(length 5.08)
+  			(name "O8"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "11"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 12.7 180)
+  			(length 5.08)
+  			(name "I1"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "1"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 10.16 180)
+  			(length 5.08)
+  			(name "I2"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "2"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 7.62 180)
+  			(length 5.08)
+  			(name "I3"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "3"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 5.08 180)
+  			(length 5.08)
+  			(name "I4"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "4"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 2.54 180)
+  			(length 5.08)
+  			(name "I5"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "5"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 0 180)
+  			(length 5.08)
+  			(name "I6"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "6"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 -2.54 180)
+  			(length 5.08)
+  			(name "I7"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "7"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  		(pin input line
+  			(at 20.32 -5.08 180)
+  			(length 5.08)
+  			(name "I8"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "8"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+  (symbol "ISM330DHCX_IMU_Module"
+  	(pin_names
+  		(offset 1.016)
+  	)
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at -12.7 20.32 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  			(justify left)
+  		)
+  	)
+  	(property "Value" "ISM330DHCX_IMU_Module"
+  		(at 0 -20.32 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Footprint" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Datasheet" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Description" "ST ISM330DHCX 6-Axis Industrial IMU Breakout Module (3.3V I2C Mode 1)"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(symbol "ISM330DHCX_IMU_Module_0_1"
+  		(rectangle
+  			(start -12.7 12.7)
+  			(end 12.7 -12.7)
+  			(stroke (width 0.254) (type default))
+  			(fill (type background))
+  		)
+  		(text "VCC_3V3"
+  			(at 0 10.795 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  		(text "GND"
+  			(at 0 -10.795 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "ISM330DHCX_IMU_Module_1_1"
+  		(pin power_in line
+  			(at 0 17.78 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "1"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_in line
+  			(at 0 -17.78 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "2"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin bidirectional line
+  			(at -17.78 7.62 0)
+  			(length 5.08)
+  			(name "SDA"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "3"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -17.78 5.08 0)
+  			(length 5.08)
+  			(name "SCL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "4"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -17.78 2.54 0)
+  			(length 5.08)
+  			(name "INT1"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "5"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -17.78 0 0)
+  			(length 5.08)
+  			(name "INT2"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "6"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -17.78 -2.54 0)
+  			(length 5.08)
+  			(name "CS"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "7"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -17.78 -5.08 0)
+  			(length 5.08)
+  			(name "SDO_SA0"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "8"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+  (symbol "HC05_Bluetooth_Module"
+  	(pin_names
+  		(offset 1.016)
+  	)
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at -12.7 17.78 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  			(justify left)
+  		)
+  	)
+  	(property "Value" "HC05_Bluetooth_Module"
+  		(at 0 -17.78 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Footprint" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Datasheet" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Description" "HC-05 Serial Bluetooth Breakout Module (ZS-040 6-Pin, 5V Power, 3.3V UART Logic)"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(symbol "HC05_Bluetooth_Module_0_1"
+  		(rectangle
+  			(start -12.7 10.16)
+  			(end 12.7 -10.16)
+  			(stroke (width 0.254) (type default))
+  			(fill (type background))
+  		)
+  		(text "VCC_5V"
+  			(at 0 8.255 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  		(text "GND"
+  			(at 0 -8.255 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "HC05_Bluetooth_Module_1_1"
+  		(pin power_in line
+  			(at 0 15.24 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "1"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_in line
+  			(at 0 -15.24 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "2"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -17.78 5.08 0)
+  			(length 5.08)
+  			(name "TXD"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "3"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -17.78 2.54 0)
+  			(length 5.08)
+  			(name "RXD"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "4"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -17.78 0 0)
+  			(length 5.08)
+  			(name "STATE"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "5"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -17.78 -2.54 0)
+  			(length 5.08)
+  			(name "EN_KEY"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "6"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+  (symbol "NUCLEO_L432KC"
+  	(pin_names
+  		(offset 1.016)
+  	)
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at -17.78 35.56 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  			(justify left)
+  		)
+  	)
+  	(property "Value" "NUCLEO_L432KC"
+  		(at 0 -35.56 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects
+  			(font
+  				(size 1.27 1.27)
+  			)
+  		)
+  	)
+  	(property "Footprint" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Datasheet" ""
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Description" "ST NUCLEO-L432KC (MB1180) STM32L432KCU6 Nucleo-32 Dev Board (CN3/CN4 Arduino Nano Pinout)"
+  		(at 0 0 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(hide yes)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(symbol "NUCLEO_L432KC_0_1"
+  		(rectangle
+  			(start -17.78 27.94)
+  			(end 17.78 -27.94)
+  			(stroke (width 0.254) (type default))
+  			(fill (type background))
+  		)
+  		(text "+5V"
+  			(at -5.08 26.035 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  		(text "+3V3"
+  			(at 7.62 26.035 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  		(text "GND"
+  			(at 0 -26.035 0)
+  			(effects
+  				(font
+  					(size 1.27 1.27)
+  				)
+  			)
+  		)
+  	)
+  	(symbol "NUCLEO_L432KC_1_1"
+  		(pin power_in line
+  			(at -5.08 33.02 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-4"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_out line
+  			(at 7.62 33.02 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-14"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_in line
+  			(at 0 -33.02 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-4"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 22.86 0)
+  			(length 5.08)
+  			(name "D2/PA12_M1_PUL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-5"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 20.32 0)
+  			(length 5.08)
+  			(name "D3/PB0_M1_DIR"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-6"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 17.78 0)
+  			(length 5.08)
+  			(name "D6/PB1_M2_PUL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-9"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 15.24 0)
+  			(length 5.08)
+  			(name "D9/PA8_M2_DIR"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-12"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 12.7 0)
+  			(length 5.08)
+  			(name "D10/PA11_M3_PUL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-13"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 10.16 0)
+  			(length 5.08)
+  			(name "D11/PB5_M3_DIR"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-14"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 7.62 0)
+  			(length 5.08)
+  			(name "D12/PB4_Z_PUL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-15"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 5.08 0)
+  			(length 5.08)
+  			(name "A3/PA4_Z_DIR"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-9"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 0 0)
+  			(length 5.08)
+  			(name "A0/PA0_ENC1"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-12"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 -2.54 0)
+  			(length 5.08)
+  			(name "A1/PA1_ENC2"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-11"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 -5.08 0)
+  			(length 5.08)
+  			(name "A2/PA3_ENC3"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-10"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin bidirectional line
+  			(at -22.86 -7.62 0)
+  			(length 5.08)
+  			(name "D4/PB7_SDA"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-7"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 -10.16 0)
+  			(length 5.08)
+  			(name "D5/PB6_SCL"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-8"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin output line
+  			(at -22.86 -12.7 0)
+  			(length 5.08)
+  			(name "D1/PA9_BT_TX"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-1"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 -15.24 0)
+  			(length 5.08)
+  			(name "D0/PA10_BT_RX"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-2"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 -17.78 0)
+  			(length 5.08)
+  			(name "A6/PA7_LIM_HI"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-6"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at -22.86 -20.32 0)
+  			(length 5.08)
+  			(name "D13/PB3_LIM_LO"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-15"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin bidirectional line
+  			(at 22.86 22.86 180)
+  			(length 5.08)
+  			(name "USB_VCP"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN1"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin power_in line
+  			(at 22.86 15.24 180)
+  			(length 5.08)
+  			(name "VIN_7-12V"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-1"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin input line
+  			(at 22.86 12.7 180)
+  			(length 5.08)
+  			(name "NRST"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN3-3"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  		(pin passive line
+  			(at 22.86 10.16 180)
+  			(length 5.08)
+  			(name "AREF"
+  				(effects
+  					(font
+  						(size 1.27 1.27)
+  					)
+  				)
+  			)
+  			(number "CN4-13"
+  				(effects
+  					(font
+  						(size 0.85 0.85)
+  					)
+  				)
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+  (symbol "Unspecified_Main_Computer"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -17.78 27.94 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_Main_Computer" (at 0 -27.94 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified Main Onboard Computer (e.g. Raspberry Pi 5)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_Main_Computer_0_1"
+      (rectangle (start -17.78 20.32) (end 17.78 -20.32)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC_5V" (at 0.00 18.415 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -18.415 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_Main_Computer_1_1"
+      (pin power_in line (at 0.00 25.40 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -25.40 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -22.86 15.24 0) (length 5.08)
+        (name "MCU_RX" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -22.86 12.70 0) (length 5.08)
+        (name "MCU_TX" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 22.86 15.24 180) (length 5.08)
+        (name "TOF_SDA" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 22.86 12.70 180) (length 5.08)
+        (name "TOF_SCL" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 22.86 10.16 180) (length 5.08)
+        (name "US1_TRIG" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 22.86 7.62 180) (length 5.08)
+        (name "US1_ECHO" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 22.86 5.08 180) (length 5.08)
+        (name "US2_TRIG" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 22.86 2.54 180) (length 5.08)
+        (name "US2_ECHO" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 22.86 0.00 180) (length 5.08)
+        (name "WIFI_DATA+" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 22.86 -2.54 180) (length 5.08)
+        (name "WIFI_DATA-" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 22.86 -5.08 180) (length 5.08)
+        (name "SENSOR_MCU_TX" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 22.86 -7.62 180) (length 5.08)
+        (name "SENSOR_MCU_RX" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 22.86 -10.16 180) (length 5.08)
+        (name "SCAN_TRIG" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Unspecified_ToF_Sensor"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -10.16 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_ToF_Sensor" (at 0 -15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified Time-of-Flight (ToF) Sensor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_ToF_Sensor_0_1"
+      (rectangle (start -10.16 7.62) (end 10.16 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC" (at 0.00 5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_ToF_Sensor_1_1"
+      (pin power_in line (at 0.00 12.70 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -12.70 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at -15.24 2.54 0) (length 5.08)
+        (name "SDA" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 0.00 0) (length 5.08)
+        (name "SCL" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Unspecified_Ultrasonic_Sensor"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -10.16 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_Ultrasonic_Sensor" (at 0 -15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified Ultrasonic Distance Sensor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_Ultrasonic_Sensor_0_1"
+      (rectangle (start -10.16 7.62) (end 10.16 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC_5V" (at 0.00 5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_Ultrasonic_Sensor_1_1"
+      (pin power_in line (at 0.00 12.70 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -12.70 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 2.54 0) (length 5.08)
+        (name "TRIG" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -15.24 0.00 0) (length 5.08)
+        (name "ECHO" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Unspecified_5GHz_WiFi_Uplink"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -10.16 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_5GHz_WiFi_Uplink" (at 0 -15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified 5GHz Wi-Fi Uplink Module" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_5GHz_WiFi_Uplink_0_1"
+      (rectangle (start -10.16 7.62) (end 10.16 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC_5V" (at 0.00 5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_5GHz_WiFi_Uplink_1_1"
+      (pin power_in line (at 0.00 12.70 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -12.70 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at -15.24 2.54 0) (length 5.08)
+        (name "DATA+" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at -15.24 0.00 0) (length 5.08)
+        (name "DATA-" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 2.54 180) (length 5.08)
+        (name "RF_ANT" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Unspecified_Sensor_Suite_MCU"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at -12.70 17.78 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_Sensor_Suite_MCU" (at 0 -17.78 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified Arm / Gantry Sensor Suite Controller Black Box (Objective 4)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_Sensor_Suite_MCU_0_1"
+      (rectangle (start -12.70 10.16) (end 12.70 -10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "VCC_5V" (at 0.00 8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -8.255 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_Sensor_Suite_MCU_1_1"
+      (pin power_in line (at 0.00 15.24 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at 0.00 -15.24 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -17.78 5.08 0) (length 5.08)
+        (name "RX" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -17.78 2.54 0) (length 5.08)
+        (name "TX" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -17.78 0.00 0) (length 5.08)
+        (name "SCAN_TRIG" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Unspecified_Tethered_24V_PSU"
+    (pin_names (offset 1.016))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "PS" (at -10.16 15.24 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "Unspecified_Tethered_24V_PSU" (at 0 -15.24 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (property "Description" "Unspecified Tethered 24V DC Main Power Supply" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+    (symbol "Unspecified_Tethered_24V_PSU_0_1"
+      (rectangle (start -10.16 7.62) (end 10.16 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (text "+24V_OUT" (at 0.00 5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (text "GND" (at 0.00 -5.715 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+    (symbol "Unspecified_Tethered_24V_PSU_1_1"
+      (pin power_out line (at 0.00 12.70 270) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 0.00 -12.70 90) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MeanWell_SKMW40F_05"
+  	(pin_names (offset 1.016))
+  	(exclude_from_sim no)
+  	(in_bom yes)
+  	(on_board yes)
+  	(in_pos_files yes)
+  	(duplicate_pin_numbers_are_jumpers no)
+  	(property "Reference" "U"
+  		(at -15.24 15.24 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects (font (size 1.27 1.27)) (justify left))
+  	)
+  	(property "Value" "MeanWell_SKMW40F_05"
+  		(at 0 -15.24 0)
+  		(show_name no)
+  		(do_not_autoplace no)
+  		(effects (font (size 1.27 1.27)))
+  	)
+  	(property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(property "Description" "Mean Well SKMW40F-05 Isolated DC-DC Converter (9-36V In -> 5V/8A 40W Out, 1x1 in, 2kVDC Isolation)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+  	(symbol "MeanWell_SKMW40F_05_0_1"
+  		(rectangle (start -15.24 7.62) (end 15.24 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))
+  		(text "+Vin_24V"
+  			(at -5.08 5.715 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  		(text "+Vout_5V"
+  			(at 7.62 5.715 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  		(text "-Vin_24V"
+  			(at -5.08 -5.715 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  		(text "-Vout_5V"
+  			(at 7.62 -5.715 0)
+  			(effects (font (size 1.27 1.27)))
+  		)
+  	)
+  	(symbol "MeanWell_SKMW40F_05_1_1"
+  		(pin power_in line
+  			(at -5.08 12.7 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "1"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  		(pin power_out line
+  			(at 7.62 12.7 270)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "6"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  		(pin power_in line
+  			(at -5.08 -12.7 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "2"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  		(pin power_out line
+  			(at 7.62 -12.7 90)
+  			(length 5.08)
+  			(name "~"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "4"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  		(pin passive line
+  			(at -20.32 0 0)
+  			(length 5.08)
+  			(name "R.C"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "3"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  		(pin passive line
+  			(at 20.32 0 180)
+  			(length 5.08)
+  			(name "Trim"
+  				(effects (font (size 1.27 1.27)))
+  			)
+  			(number "5"
+  				(effects (font (size 0.85 0.85)))
+  			)
+  		)
+  	)
+  	(embedded_fonts no)
+  )
+)

@@ -12,6 +12,7 @@ Thumbs.db
 .~lock.*
 
 # Electrical CAD / EDA backups & caches (KiCad, Eagle, etc.)
+.history/
 *-backups/
 *.lck
 *.bak
