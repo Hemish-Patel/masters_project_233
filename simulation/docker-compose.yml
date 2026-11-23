@@ -1,3 +1,5 @@
+name: masters_project_233
+
 services:
   ros-dev:
     build: .

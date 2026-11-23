@@ -5,15 +5,34 @@ A hardware-agnostic, containerised **ROS 2 Humble** and **Gazebo Fortress** deve
 ---
 
 ## Table of Contents
-1. [Environment & Docker Setup](#1-environment--docker-setup)
-2. [Docker & Workspace Architecture](#2-docker--workspace-architecture)
-3. [Simulation Architecture](#3-simulation-architecture)
-4. [Launching & Controlling the Simulation](#4-launching--controlling-the-simulation)
-5. [Development Process & Instructions](#5-development-process--instructions)
+1. [Repository Structure](#1-repository-structure)
+2. [Environment & Docker Setup](#2-environment--docker-setup)
+3. [Docker & Workspace Architecture](#3-docker--workspace-architecture)
+4. [Simulation Architecture](#4-simulation-architecture)
+5. [Launching & Controlling the Simulation](#5-launching--controlling-the-simulation)
+6. [Development Process & Instructions](#6-development-process--instructions)
 
 ---
 
-## 1. Environment & Docker Setup
+## 1. Repository Structure
+
+```text
+masters_project_233/
+├── README.md                   # Project overview & setup guide
+├── simulation/                 # Dockerised ROS 2 Humble + Gazebo Fortress simulation
+│   ├── Dockerfile              # Container OS, ROS 2 Humble & Gazebo Fortress image definition
+│   ├── docker-compose.yml      # Base container configuration & persistent volumes
+│   ├── docker-compose.nvidia.yml # NVIDIA GPU hardware acceleration override
+│   ├── launch_masters.sh       # Hardware-detecting container launch script
+│   └── src/                    # ROS 2 workspace source packages
+├── firmware/                   # Low-level microcontroller firmware
+├── electrical_schematics/      # Electrical schematics & PCB/wiring diagrams
+└── submission_documents/       # Project reports, presentations & submission files
+```
+
+---
+
+## 2. Environment & Docker Setup
 
 ### Prerequisites & Hardware Support
 Before starting, ensure you have the following installed on your Linux host machine:
@@ -21,8 +40,8 @@ Before starting, ensure you have the following installed on your Linux host mach
 - **Docker** and **Docker Compose** (`docker compose` plugin)
 
 #### GPU Acceleration Support
-The environment automatically adapts to your hardware when launched via `./launch_masters.sh`:
-- **NVIDIA GPUs:** Full hardware acceleration via `docker-compose.nvidia.yml` (requires **[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)** on the host).
+The environment automatically adapts to your hardware when launched via `./simulation/launch_masters.sh`:
+- **NVIDIA GPUs:** Full hardware acceleration via `simulation/docker-compose.nvidia.yml` (requires **[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)** on the host).
 - **AMD & Intel GPUs:** Full hardware acceleration out of the box via Linux Direct Rendering Infrastructure (`/dev/dri`) and Mesa, with no extra toolkit required.
 - **No GPU (CPU-only):** Automatically falls back to Mesa CPU software rendering (`llvmpipe`).
 
@@ -36,14 +55,19 @@ cd masters_project_233
 *(Or using HTTPS: `git clone https://github.com/Hemish-Patel/masters_project_233.git`)*
 
 #### Step 2: Build the Docker Image (Run Once)
-This downloads Ubuntu 22.04, ROS 2 Humble, Gazebo Fortress (`ros-humble-ros-gz`), `ros2_control`, and Navigation2 / SLAM dependencies defined in the `Dockerfile`:
+This downloads Ubuntu 22.04, ROS 2 Humble, Gazebo Fortress (`ros-humble-ros-gz`), `ros2_control`, and Navigation2 / SLAM dependencies defined in `simulation/Dockerfile`:
 ```bash
+cd simulation
 sudo docker compose build
 ```
 
 #### Step 3: Launch the Container
-This script automatically detects your host hardware (NVIDIA, AMD, or Intel) and boots the container with the correct GPU acceleration:
+This script automatically detects your host hardware (NVIDIA, AMD, or Intel) and boots the container with the correct GPU acceleration. You can run it from either the repository root or inside `simulation/`:
 ```bash
+# From the repository root:
+./simulation/launch_masters.sh
+
+# Or from inside simulation/:
 ./launch_masters.sh
 ```
 
@@ -58,32 +82,28 @@ source install/setup.bash
 
 ---
 
-## 2. Docker & Workspace Architecture
+## 3. Docker & Workspace Architecture
 
-The project separates the **Docker infrastructure** (at the repository root) from the **ROS 2 source packages** (inside `src/`), linking them together via bind mounts and persistent volumes:
+The simulation environment lives inside `simulation/`, separating the **Docker infrastructure** from the **ROS 2 source packages** (`simulation/src/`), and linking them together via bind mounts and persistent volumes:
 
 | Container Path | Host Location | Purpose |
 | :--- | :--- | :--- |
-| `/ros2_ws/src` | `./src` (in this repo folder) | **Live-synced source code.** Edit or create ROS 2 C++/Python packages in VS Code on your host machine; changes appear immediately inside the container. |
+| `/ros2_ws/src` | `./simulation/src` (in this repo folder) | **Live-synced source code.** Edit or create ROS 2 C++/Python packages in VS Code on your host machine; changes appear immediately inside the container. |
 | `/ros2_ws/build` | Docker volume (`ros2_build`) | Persistent CMake/Colcon intermediate build files. |
 | `/ros2_ws/install` | Docker volume (`ros2_install`) | Persistent compiled ROS 2 binaries and environment hooks. |
 | `/ros2_ws/log` | Docker volume (`ros2_log`) | Persistent `colcon` build and runtime logs. |
 
-- **`Dockerfile`:** Defines the Ubuntu 22.04 + ROS 2 Humble + Gazebo Fortress image and pre-installs the simulation, control, and navigation dependencies.
-- **`docker-compose.yml` & `docker-compose.nvidia.yml`:** Passes X11 display sockets, `/dev/dri` GPU devices, and NVIDIA PRIME render offload into the container so Gazebo and RViz2 windows open natively on the host desktop.
-- **`launch_masters.sh`:** Grants local X11 display access (`xhost +local:root`), checks for an active NVIDIA GPU via `nvidia-smi`, and starts the container.
+- **`simulation/Dockerfile`:** Defines the Ubuntu 22.04 + ROS 2 Humble + Gazebo Fortress image and pre-installs the simulation, control, and navigation dependencies.
+- **`simulation/docker-compose.yml` & `simulation/docker-compose.nvidia.yml`:** Passes X11 display sockets, `/dev/dri` GPU devices, and NVIDIA PRIME render offload into the container so Gazebo and RViz2 windows open natively on the host desktop.
+- **`simulation/launch_masters.sh`:** Grants local X11 display access (`xhost +local:root`), checks for an active NVIDIA GPU via `nvidia-smi`, and starts the container.
 
 ---
 
-## 3. Simulation Architecture
+## 4. Simulation Architecture
 
-### Repository & Package Structure
+### Simulation Package Structure
 
-- `Dockerfile` - Container OS, ROS 2 Humble & Gazebo Fortress image definition
-- `docker-compose.yml` - Base container configuration & persistent volumes
-- `docker-compose.nvidia.yml` - NVIDIA GPU hardware acceleration override
-- `launch_masters.sh` - Hardware-detecting container launch script
-- `src/` - ROS 2 Workspace Source Directory
+- `simulation/src/` - ROS 2 Workspace Source Directory
   - **`omniwheel_description/`** - 3D Robot Model (URDF/Xacro) & Gazebo Spawn Launch
     - `urdf/omniwheel.urdf.xacro` - Parameterised chassis and 3 omni-wheels with directional friction
     - `launch/spawn_robot.launch.py` - Launches Gazebo Fortress, spawns the robot and bridges wheel topics
@@ -117,10 +137,10 @@ Each omni-wheel in `omniwheel.urdf.xacro` uses **anisotropic (1-directional) sur
 
 ---
 
-## 4. Launching & Controlling the Simulation
+## 5. Launching & Controlling the Simulation
 
 ### Step 1: Launch Gazebo & Spawn the Omni-Wheel Robot
-Start the container (`./launch_masters.sh`) and run:
+Start the container (`./simulation/launch_masters.sh`) and run:
 ```bash
 ros2 launch omniwheel_description spawn_robot.launch.py
 ```
@@ -168,10 +188,10 @@ Use **WASD** for planar movement ($X/Y$) and **Q / E** for rotation.
 
 ---
 
-## 5. Development Process & Instructions
+## 6. Development Process & Instructions
 
-### Rebuilding After Editing Code in `src/`
-Whenever you modify C++ source files, launch files, URDF/Xacro models, or `CMakeLists.txt` inside `src/`, re-run inside the container:
+### Rebuilding After Editing Code in `simulation/src/`
+Whenever you modify C++ source files, launch files, URDF/Xacro models, or `CMakeLists.txt` inside `simulation/src/`, re-run inside the container:
 ```bash
 cd /ros2_ws
 colcon build --merge-install
@@ -188,7 +208,8 @@ chmod -R 777 <package_name>
 *(Run `chmod -R 777 <package_name>` inside the container so VS Code on the host machine has write permissions to edit the new files.)*
 
 ### Resetting / Cleaning the Build Cache
-If you ever want to perform a completely clean rebuild (wiping `build/`, `install/`, and `log/` volumes without touching `src/`), run this on your **host machine**:
+If you ever want to perform a completely clean rebuild (wiping `build/`, `install/`, and `log/` volumes without touching `simulation/src/`), run this on your **host machine**:
 ```bash
+cd simulation
 sudo docker compose down -v
 ```

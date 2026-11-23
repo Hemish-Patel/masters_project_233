@@ -4,3 +4,17 @@ log/
 .vscode/
 *.pyc
 __pycache__/
+
+# OS & Office temp/lock files
+.DS_Store
+Thumbs.db
+~$*
+.~lock.*
+
+# Electrical CAD / EDA backups & caches (KiCad, Eagle, etc.)
+*-backups/
+*.lck
+*.bak
+*.b#*
+*.s#*
+fp-info-cache
